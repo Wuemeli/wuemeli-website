@@ -3,8 +3,8 @@
 > Live Demo at https://wuemeli.com
 
 ## 🪺 Preqrequisites
-Before you begin, ensure you have met the following requirements:
-Bun.sh is installed on your system.
+Before you begin, ensure you have met the following requirements: <br>
+Bun.sh is installed on your system.  <br>
 Dont remove my Credit from the Footer.
 
 ## 🚀 Quick start
@@ -33,7 +33,7 @@ Contributions are what make the open source community such an amazing place to b
 Just fork the Project and make a Pull Request i will look at it and maybe merge it.
 
 ## 📝 Credits
-Thanks to 199ocero for the Basic Idea i credit him because some Designs are from him. But i chanaged a lot.
+Thanks to 199ocero for the Basic Idea i credit him because some Designs are from him. But i changed a lot.
 https://github.com/199ocero/Developer-Portfolio
 
 ## 📫 Contact
