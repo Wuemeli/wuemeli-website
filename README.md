@@ -2,6 +2,13 @@
 > A Portfolio for Developers <br>
 > Live Demo at https://wuemeli.com
 
+## 📦 Built With
+- [Bun.sh](https://bun.sh) - The Framework used
+- [TailwindCSS](https://tailwindcss.com) - The CSS Framework used
+- [Fontawesome](https://fontawesome.com) - The Icon Library used
+- [NuxtJS](https://nuxt.com) - The Framework used
+- [VueJS](https://vuejs.org) - The Framework used
+
 ## 🪺 Preqrequisites
 Before you begin, ensure you have met the following requirements: <br>
 Bun.sh is installed on your system.  <br>
