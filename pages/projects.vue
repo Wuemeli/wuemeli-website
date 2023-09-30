@@ -1,41 +1,41 @@
 <template>
-  <div class="max-w-6xl px-10 mx-auto space-y-8">
-    <section>
-      <br />
-      <h1 class="text-3xl font-semibold text-center">Custom Projects 📱</h1>
+  <div class="container mx-auto px-4">
+    <section class="mt-10">
+      <h1 class="text-3xl font-semibold text-center mb-6">Custom Projects 📱</h1>
+      <br>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         <div v-for="project in customProjects" :key="project.id"
-          class="bg-opacity-70 shadow-md rounded-lg overflow-hidden p-6" :style="{ 'background-color': randomColor() }">
+          class="bg-baltic-sea shadow-md rounded-lg overflow-hidden p-6">
           <div>
-            <h2 class="text-xl font-semibold">{{ project.title }}</h2>
+            <h2 class="text-xl font-semibold text-iridium">{{ project.title }}</h2>
             <p class="text-gray-600">{{ truncateDescription(project.description) }}</p>
-            <div class="mt-4"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h1 class="text-3xl font-semibold text-center">GitHub Repositories 📱</h1>
-      <br />
+    <section class="mt-10">
+      <h1 class="text-3xl font-semibold text-center mb-6">GitHub Repositories 📱</h1>
+      <br>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        <div v-for="repo in githubRepos" :key="repo.id" class="bg-opacity-70 shadow-md rounded-lg overflow-hidden p-6"
-          :style="{ 'background-color': randomColor() }">
+        <div v-for="repo in githubRepos" :key="repo.id" class="bg-baltic-sea shadow-md rounded-lg overflow-hidden p-6">
           <div>
-            <h2 class="text-xl font-semibold">{{ repo.name }}</h2>
+            <h2 class="text-xl font-semibold text-iridium">{{ repo.name }}</h2>
             <p class="text-gray-600">{{ truncateDescription(repo.description) }}</p>
             <div class="flex justify-between items-center mt-4">
               <a :href="repo.html_url" target="_blank" rel="noopener noreferrer"
-                class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Check it Out</a>
+                class="inline-block bg-dune text-white px-4 py-2 rounded hover:bg-dark-gray">Check it Out</a>
               <span class="text-yellow-500">{{ repo.stargazers_count }} Stars</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <br />
+    <br>
   </div>
 </template>
+
+
 
 <script>
 export default {
