@@ -12,7 +12,7 @@
 ## 🪺 Preqrequisites
 Before you begin, ensure you have met the following requirements: <br>
 Bun.sh is installed on your system.  <br>
-Dont remove my Credit from the Footer.
+Dont remove my Credits from the Footer.
 
 ## 🚀 Quick start
 
