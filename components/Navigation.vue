@@ -18,35 +18,35 @@
         <router-link to="/" class="text-red-500 hover:bg-gray-800 animated-link" active-class="text-blue-500 font-bold"
           exact>
           <div class="flex items-center mr-3">
-            <img src="~assets/icons/vue.svg" alt="Vue icon" class="w-5 h-auto mr-2" />
+            <NuxtImg src="/icons/vue.svg" alt="Vue icon" class="w-5 h-auto mr-2" />
             <p>Index.vue</p>
           </div>
         </router-link>
         <router-link to="/experience" class="text-red-500 hover:bg-gray-800 animated-link"
           active-class="text-blue-500 font-bold" exact>
           <div class="flex items-center mr-3">
-            <img src="~assets/icons/js.svg" alt="JS icon" class="w-5 h-auto mr-2" />
+            <img src="/icons/js.svg" alt="JS icon" class="w-5 h-auto mr-2" />
             <p>Experience.js</p>
           </div>
         </router-link>
         <router-link to="/projects" class="text-red-500 hover:bg-gray-800 animated-link"
           active-class="text-blue-500 font-bold" exact>
           <div class="flex items-center">
-            <img src="~assets/icons/ts.svg" alt="TS icon" class="w-5 h-auto mr-2" />
+            <img src="/icons/ts.svg" alt="TS icon" class="w-5 h-auto mr-2" />
             <p>Projects.ts</p>
           </div>
         </router-link>
         <router-link to="/codingstats" class="text-red-500 hover:bg-gray-800 animated-link"
           active-class="text-blue-500 font-bold" exact>
           <div class="flex items-center">
-            <img src="~assets/icons/python.svg" alt="Python icon" class="w-5 h-auto mr-2" />
+            <img src="/icons/python.svg" alt="Python icon" class="w-5 h-auto mr-2" />
             <p>Coding Stats.py</p>
           </div>
         </router-link>
         <router-link to="/github" class="text-red-500 hover:bg-gray-800 animated-link"
           active-class="text-blue-500 font-bold" exact>
           <div class="flex items-center">
-            <img src="~assets/icons/github.svg" alt="GitHub icon" class="w-5 h-auto mr-2" />
+            <img src="/icons/github.svg" alt="GitHub icon" class="w-5 h-auto mr-2" />
             <p>Github.gh</p>
           </div>
         </router-link>

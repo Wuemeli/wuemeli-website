@@ -31,7 +31,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap'],
+  modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap', '@nuxt/image'],
 
   robots: {
     UserAgent: '*',
