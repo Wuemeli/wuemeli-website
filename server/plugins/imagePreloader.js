@@ -1,5 +1,3 @@
-// plugins/imagePreloader.js
-
 export default function ({ app }, inject) {
   if (process.client) {
     const images = [
