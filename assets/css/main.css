@@ -20,7 +20,26 @@ p {
   @apply bg-gray-800;
 }
 
-.falling-character {
-  position: absolute;
-  animation: fall 2s linear infinite;
+.animated-link {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.animated-link:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
 }

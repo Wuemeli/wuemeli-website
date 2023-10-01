@@ -66,10 +66,6 @@ export default {
         console.error('Error fetching GitHub repositories:', error)
       }
     },
-    randomColor() {
-      const randomColor = Math.floor(Math.random() * 16777215).toString(16)
-      return `#${randomColor}`
-    },
     truncateDescription(description) {
       if (description && description.length > 100) {
         return description.slice(0, 100) + '...';
