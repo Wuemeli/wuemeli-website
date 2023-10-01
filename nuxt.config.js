@@ -39,25 +39,6 @@ export default defineNuxtConfig({
     CleanParam: 'query',
   },
 
-  buildModules: [
-    '@nuxtjs/pwa',
-  ],
-
-  pwa: {
-    icon: {
-      fileName: '/img/icon.png',
-    },
-    meta: {
-      title: 'Wuemeli\'s Portfolio 🔥',
-      author: 'Wuemeli',
-    },
-    manifest: {
-      name: 'Wuemeli\'s Portfolio 🔥',
-      short_name: 'Wuemeli\'s Portfolio 🔥',
-      lang: 'en',
-    },
-  },
-
   postcss: {
     plugins: {
       tailwindcss: {},
