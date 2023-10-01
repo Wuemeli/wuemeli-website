@@ -59,20 +59,7 @@
 import moment from 'moment-timezone'
 
 export default {
-  data() {
-    return {
-      discordStatus: '',
-    }
-  },
   methods: {
-    async getDiscordStatus() {
-      try {
-        this.discordStatus =
-          'https://dcbadge.vercel.app/api/shield/704918773035171931?theme=gray&logoColor=presence'
-      } catch (error) {
-        console.error('Error fetching Discord status:', error)
-      }
-    },
     changeColor() {
       const randomColor =
         '#' + Math.floor(Math.random() * 16777215).toString(16)
@@ -117,7 +104,6 @@ export default {
     },
   },
   mounted() {
-    this.getDiscordStatus()
     const animatedLinks = document.querySelectorAll('.animated-link')
     animatedLinks.forEach((link) => {
       link.addEventListener('mouseenter', () => {
@@ -130,14 +116,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.animated-link {
-  transition: transform 0.3s ease;
-  transform-origin: center;
-}
-
-.animated-link:hover {
-  transform: scale(1.1) rotate(2deg);
-}
-</style>

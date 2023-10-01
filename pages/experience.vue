@@ -65,12 +65,6 @@
   </div>
 </template>
 
-<style>
-.text-xl {
-  font-size: 1.5rem;
-}
-</style>
-
 <script>
 export default {
   name: 'ExperiencePage',
