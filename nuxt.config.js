@@ -7,7 +7,9 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Wuemeli\'s Portfolio 🔥',
-      lang: 'en',
+      htmlAttrs: {
+        lang: 'en'
+      }
     },
     meta: [
       { hid: 'description', name: 'description', content: 'Explore Wuemeli\'s impressive portfolio of web development projects, including Nuxt.js and Discord.js creations. Discover innovative web solutions and creative designs.' },
