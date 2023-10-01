@@ -94,3 +94,6 @@ sw.*
 # Build
 .output
 dist
+
+# Service Workers
+sw.*
