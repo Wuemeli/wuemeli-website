@@ -16,16 +16,12 @@ async function getTime() {
   return zurichTime.format('HH:mm')
 }
 
-export default defineEventHandler((event) => async () => {
-  if (event.httpMethod === 'GET') {
-    const time = await getTime();
-    const status = await getTimezoneStatus();
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        time: time,
-        status: status
-      })
-    }
+export default defineEventHandler(async (event) => {
+  const time = await getTime();
+  const status = await getTimezoneStatus();
+  return {
+    time: time,
+    status: status
   }
 })
+  
