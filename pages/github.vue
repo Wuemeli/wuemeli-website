@@ -10,7 +10,8 @@
       <br />
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=Wuemeli&theme=radical&border=false" alt="Github Streak" class="w-30 h-auto" />
     </div>
-  </div>
+  <p class="text-sm text-gray-500">(My open-source statistics. These statistics do not reflect my actual coding activity)</p>
+    </div>
 </template>
 
 <script>

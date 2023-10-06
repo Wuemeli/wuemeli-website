@@ -7,6 +7,8 @@
         alt="Wuemelis Wakatime Stats"
         class="w-30 h-auto"
       />
+      <br>
+      <p class="text-sm text-gray-500">(This shows my coding activity over the last 7 days)</p>
     </div>
   </div>
 </template>
