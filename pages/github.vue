@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center">
       <p class="font-semibold">My Github Stats 💻</p>
       <br />
-      <img src="https://github-readme-stats.vercel.app/api?username=wuemeli&show_icons=true&theme=radical&border=false" alt="Github Stats" class="w-30 h-auto" />
+      <img src="https://stats.dooboo.io/api/github-stats?login=wuemeli" alt="Github Stats" class="w-30 h-auto" />
     </div>
     <div class="flex flex-col items-center">
       <p class="font-semibold">My Github Streak 🔥</p>
