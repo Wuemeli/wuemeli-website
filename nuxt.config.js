@@ -14,9 +14,7 @@ export default defineNuxtConfig({
     meta: [
       { hid: 'description', name: 'description', content: 'Explore Wuemeli\'s impressive portfolio of web development projects, including Nuxt.js and Discord.js creations. Discover innovative web solutions and creative designs.' },
       { name: 'keywords', content: 'portfolio, web development, Nuxt.js, Discord.js, Wuemeli, projects, creative designs, web solutions' },
-      { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'Wuemeli' },
-      { name: 'theme-color', content: '#ffffff' },
       { hid: 'og:title', property: 'og:title', content: 'Wuemeli\'s Portfolio 🔥' },
       { hid: 'og:description', property: 'og:description', content: 'Explore Wuemeli\'s impressive portfolio of web development projects, including Nuxt.js and Discord.js creations. Discover innovative web solutions and creative designs.' },
       { hid: 'og:url', property: 'og:url', content: 'https://wuemeli.com' },
