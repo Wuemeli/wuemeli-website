@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl px-10 mx-auto space-y-8 text-center">
+  <div class="max-w-4xl px-10 mx-auto space-y-8 text-center animate-fade-up">
     <div class="flex flex-col items-center">
       <p class="text-light-gray">Hi 👋 , my name is</p>
       <div class="flex items-center">

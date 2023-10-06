@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl px-10 mx-auto space-y-8 text-center">
+  <div class="max-w-4xl px-10 mx-auto space-y-8 text-center animate-shake">
     <p class="font-semibold">My Coding Stats 📊</p>
     <div class="flex flex-col items-center">
       <img
