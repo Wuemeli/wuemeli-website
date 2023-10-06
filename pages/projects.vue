@@ -1,9 +1,9 @@
 <template>
   <div class="container mx-auto px-4">
     <section class="mt-10">
-      <h1 class="text-3xl font-semibold text-center mb-6">Custom Projects 📱</h1>
+      <h1 class="text-3xl font-semibold text-center mb-6 animate-flip-down">Custom Projects 📱</h1>
       <br>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 animate-flip-down">
         <div v-for="project in customProjects" :key="project.id"
           class="bg-baltic-sea shadow-md rounded-lg overflow-hidden p-6">
           <div>
@@ -15,9 +15,9 @@
     </section>
 
     <section class="mt-10">
-      <h1 class="text-3xl font-semibold text-center mb-6">GitHub Repositories 📱</h1>
+      <h1 class="text-3xl font-semibold text-center mb-6 animate-fade-right">GitHub Repositories 📱</h1>
       <br>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 animate-fade-right">
         <div v-for="repo in githubRepos" :key="repo.id" class="bg-baltic-sea shadow-md rounded-lg overflow-hidden p-6">
           <div>
             <h2 class="text-xl font-semibold text-iridium">{{ repo.name }}</h2>

@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-6xl mx-auto py-10 text-center">
-    <div class="flex flex-wrap justify-center items-center space-x-6">
+    <div class="flex flex-wrap justify-center items-center space-x-6 animate-fade-right">
       <div class="flex items-center">
         <NuxtImg src="/icons/linux.svg" alt="Linux Icon" class="h-12 w-12" />
         <span class="ml-4 text-xl font-semibold text-light-gray">Linux</span>
@@ -26,7 +26,7 @@
         <span class="ml-4 text-xl font-semibold text-light-gray">VueJS</span>
       </div>
     </div>
-    <div class="flex flex-wrap justify-center items-center space-x-6 mt-6">
+    <div class="flex flex-wrap justify-center items-center space-x-6 mt-6 animate-flip-up">
       <div class="flex items-center">
         <NuxtImg
           src="/icons/discordjs.svg"
