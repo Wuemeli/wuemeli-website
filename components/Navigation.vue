@@ -11,7 +11,7 @@
           I'm currently {{ getTimezoneStatus() }} and it's {{ getTime() }} ⏰ in Zurich 🇨🇭
         </p>
       </div>
-        <img src="https://dcbadge.vercel.app/api/shield/704918773035171931?theme=gray&logoColor=presence" alt="Discord Status" width="250" class=""/>
+        <img src="https://dcbadge.vercel.app/api/shield/704918773035171931?theme=gray&logoColor=presence" alt="Discord Status" width="250" class="" onclick="window.open('https://discord.com/users/704918773035171931', '_blank')">
       </nav>
     <div class="flex bg-baltic-sea">
       <div class="flex items-center px-10 py-3 space-x-7 bg-dark-gray">
