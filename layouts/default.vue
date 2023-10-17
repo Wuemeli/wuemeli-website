@@ -11,23 +11,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    this.clickSound = new Audio('/audio/click.wav');
-    window.addEventListener('click', this.playSound);
-  },
-  beforeDestroy() {
-    window.removeEventListener('click', this.playSound);
-  },
-  methods: {
-    playSound() {
-      this.clickSound.play();
-    },
-  },
-};
-</script>
-
 <style>
 @import url('~/assets/css/main.css');
 </style>
