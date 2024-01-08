@@ -8,7 +8,7 @@
       </div>
       <div class="flex-grow flex items-center justify-center">
         <p class="text-light-gray-center">
-          I'm currently {{ getTimezoneStatus() }} and it's {{ getTime() }} ⏰ in Zurich 🇨🇭
+          I'm currently {{ getTimezoneStatus() }} and it's {{ getTime() }} in Zurich 🇨🇭
         </p>
       </div>
         <img src="https://dcbadge.vercel.app/api/shield/704918773035171931?theme=gray&logoColor=presence" alt="Discord Status" width="250" class="" onclick="window.open('https://discord.com/users/704918773035171931', '_blank')">
