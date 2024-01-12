@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', 'animate.css/animate.min.css'],
 
   modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap', '@nuxt/image'],
 
