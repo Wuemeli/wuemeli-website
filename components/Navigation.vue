@@ -15,7 +15,7 @@
         </p>
       </div>
       <img src="https://dcbadge.vercel.app/api/shield/704918773035171931?theme=gray&logoColor=presence"
-        alt="Discord Status" width="250" class="animate_animated"
+        alt="Discord Status" width="250" class="animate_animated animate__bounceIn"
         onclick="window.open('https://discord.com/users/704918773035171931', '_blank')">
     </nav>
     <div class="flex bg-baltic-sea">
