@@ -64,12 +64,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'ExperiencePage',
-  head: {
-    title: 'Experience 🔥',
-  },
-}
-</script>

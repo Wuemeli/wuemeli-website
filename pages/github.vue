@@ -13,12 +13,3 @@
   <p class="text-sm text-gray-500">(My open-source statistics. These statistics do not reflect my actual coding activity)</p>
     </div>
 </template>
-
-<script>
-export default {
-  name: 'GithubPage',
-  head: {
-    title: 'Github Stats 💻',
-  },
-}
-</script>

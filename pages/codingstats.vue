@@ -12,12 +12,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'CodingStatsPage',
-  head: {
-    title: 'Coding Stats 📊',
-  },
-}
-</script>

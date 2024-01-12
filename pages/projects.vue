@@ -40,7 +40,6 @@
 
 <script>
 export default {
-  name: 'ProjectsPage',
   data() {
     return {
       githubRepos: [],
@@ -73,9 +72,6 @@ export default {
       }
       return description;
     },
-  },
-  head: {
-    title: 'Projects 📱',
   },
 }
 </script>
