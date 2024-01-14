@@ -17,7 +17,7 @@
         <li><strong>Syncthing:</strong> A File Sync Service</li>
         <li><strong>Wireguard VPN</strong></li>
         <li><strong>Twitch Channel Point Miner</strong></li>
-        <li><strong>Pi-Hle:</strong> Adblocker</li>
+        <li><strong>Pi-Hole:</strong> Network-wide DNS based Adblocker</li>
       </ul>
       <p>And a lot of other stuff.</p>
       <p class="text-sm text-gray-500">(The SSD has been build in safely :)</p>
