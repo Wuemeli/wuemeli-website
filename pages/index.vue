@@ -8,11 +8,10 @@
         <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">Wuemeli</p>
       </div>
       <p class="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-light-gray">
-        Full Stack Developer specializing in Discord Bots and Websites
-      </p>
-      <p class="text-light-gray">
-        I ❤️ creating Discord Bots and Websites
+        <Typewriter title="Full Stack Developer specialized in "
+          :words="['Discord Bots', 'Websites', 'Backends', 'Linux']" />
       </p>
     </div>
   </div>
 </template>
+  

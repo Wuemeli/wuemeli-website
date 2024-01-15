@@ -5,14 +5,14 @@
     </div>
     <div class="w-full md:w-1/2 p-4 animate-jump-in">
       <p>Let's start with the specs of my server:</p>
-      <ul>
+      <ul class="list-disc list-inside  text-sm text-gray-500">
         <li><strong>CPU:</strong> 8 x Intel(R) Xeon(R) CPU E3-1240</li>
         <li><strong>RAM:</strong> 8GB DDR3</li>
         <li><strong>SSD:</strong> 1TB</li>
         <li><strong>HDD:</strong> 1TB</li>
       </ul>
       <p>My server is running Proxmox. And I use it to host:</p>
-      <ul>
+      <ul class="list-disc list-inside  text-sm text-gray-500">
         <li><strong>Immich:</strong> A Foto Backup Service</li>
         <li><strong>Syncthing:</strong> A File Sync Service</li>
         <li><strong>Wireguard VPN</strong></li>
