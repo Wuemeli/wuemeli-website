@@ -11,6 +11,7 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: 'preload', href: '/img/homeserver.jpg', as: 'image' },
+        { rel: 'preload', href: 'https://api.github.com/users/wuemeli/repos', as: 'fetch' },
         { rel: 'preload', href: 'https://github-readme-stats.vercel.app/api/wakatime?username=wuemeli&theme=radical', as: 'image' },
         { rel: 'preload', href: 'https://stats.dooboo.io/api/github-stats?login=wuemeli', as: 'image' },
         { rel: 'preload', href: 'https://github-readme-streak-stats.herokuapp.com/?user=Wuemeli&theme=radical&border=false', as: 'image' },
