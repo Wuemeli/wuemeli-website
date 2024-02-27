@@ -117,7 +117,7 @@ export default {
       const hour = time.hour()
 
       if (hour >= 22 || hour < 6) {
-        return '😴'
+        return '🌙'
       } else {
         return '🌞'
       }
