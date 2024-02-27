@@ -23,6 +23,7 @@
     "moment-timezone": "^0.5.43",
     "nuxt": "^3.7.4",
     "nuxt-simple-sitemap": "^4.0.0",
+    "tailwind-typewriter": "^1.0.1",
     "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {

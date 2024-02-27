@@ -9,6 +9,12 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
+      link: [
+        { rel: 'preload', href: '/img/homeserver.jpg', as: 'image' },
+        { rel: 'preload', href: 'https://github-readme-stats.vercel.app/api/wakatime?username=wuemeli&theme=radical', as: 'image' },
+        { rel: 'preload', href: 'https://stats.dooboo.io/api/github-stats?login=wuemeli', as: 'image' },
+        { rel: 'preload', href: 'https://github-readme-streak-stats.herokuapp.com/?user=Wuemeli&theme=radical&border=false', as: 'image' },
+      ],
       meta: [
         { hid: 'description', name: 'description', content: 'Explore Wuemeli\'s impressive portfolio of web development projects, including Nuxt.js and Discord.js creations. Discover innovative web solutions and creative designs.' },
         { name: 'keywords', content: 'portfolio, web development, Nuxt.js, Discord.js, Wuemeli, projects, creative designs, web solutions' },

@@ -21,6 +21,18 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    require('tailwind-typewriter')({
+      wordsets: {
+        skills: {
+          words: ['Discord Bots', 'Full Stack Applicatios', 'Networking', 'Security', 'Linux'],
+          delay: 3
+        },
+        hello: {
+          words: ['Hello', 'Bonjour', 'Hola', 'Ciao', '你好', 'こんにちは', '안녕하세요', 'สวัสดี', 'مرحبا'],
+          delay: 1
+        },
+      }
+    })
   ],
 }
