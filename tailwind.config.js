@@ -25,7 +25,7 @@ module.exports = {
     require('tailwind-typewriter')({
       wordsets: {
         skills: {
-          words: ['Discord Bots', 'Full Stack Applicatios', 'Networking', 'Security', 'Linux'],
+          words: ['Discord Bot', 'Full Stack Applicatios', 'Networking', 'Security', 'Linux'],
           delay: 3
         },
         hello: {
