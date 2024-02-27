@@ -9,10 +9,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        iridium: '#3C3C3C',
+        iridium: '#2d3133',
         dune: '#333333',
-        'baltic-sea': '#252526',
-        'dark-gray': '#1E1E1E',
+        'baltic-sea': '#1c1f20',
+        'dark-gray': '#171819',
         'light-gray': '#CCCCCC',
         'mac-red': '#EC6B5E',
         'mac-yellow': '#F3BF4F',
@@ -29,7 +29,7 @@ module.exports = {
           delay: 3
         },
         hello: {
-          words: ['Hello', 'Bonjour', 'Hola', 'Ciao', '你好', 'こんにちは', '안녕하세요', 'สวัสดี', 'مرحبا'],
+          words: ['Hello', 'Bonjour', 'Hola', 'Ciao', 'Gruezi', 'こんにちは', '안녕하세요', 'สวัสดี', '你好'],
           delay: 1
         },
       }
