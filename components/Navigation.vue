@@ -1,25 +1,25 @@
 <template>
-  <div>
-    <nav class="flex flex-row items-center justify-between px-10 py-2 bg-iridium">
-      <div class="flex-row items-center hidden space-x-3 sm:flex">
-        <div class="button w-3 h-3 rounded-full animate_animated animate__bounceIn bg-mac-red" @click="exitFullscreen">
+    <div>
+      <nav class="flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-2 bg-iridium">
+        <div class="flex-row items-center space-x-3 sm:flex">
+          <div class="button w-3 h-3 rounded-full animate_animated animate__bounceIn bg-mac-red" @click="exitFullscreen">
+          </div>
+          <div class="button w-3 h-3 rounded-full animate_animated animate__bounceIn bg-mac-yellow" ref="yellowButton"
+            @click="changeColor"></div>
+          <div class="button w-3 h-3 rounded-full animate_animated animate__bounceIn bg-mac-green" @click="enterFullscreen">
+          </div>
         </div>
-        <div class="button w-3 h-3 rounded-full animate_animated animate__bounceIn bg-mac-yellow" ref="yellowButton"
-          @click="changeColor"></div>
-        <div class="button w-3 h-3 rounded-full animate_animated animate__bounceIn bg-mac-green" @click="enterFullscreen">
+        <div class="flex-grow flex items-center justify-center">
+          <p class="animate_animated animate__bounceIn text-center md:text-left">
+            {{ newroutename }} - Wuemelis Portfolio {{ getTimezoneStatus() }}
+          </p>
         </div>
-      </div>
-      <div class="flex-grow flex items-center justify-center">
-        <p class="animate_animated animate__bounceIn ext-light-gray-center">
-          I'm currently {{ getTimezoneStatus() }} and it's {{ getTime() }} in Zurich 🇨🇭
-        </p>
-      </div>
-      <img src="https://dcbadge.vercel.app/api/shield/704918773035171931?theme=gray&logoColor=presence"
-        alt="Discord Status" width="250" class="animate_animated animate__bounceIn"
-        onclick="window.open('https://discord.com/users/704918773035171931', '_blank')">
-    </nav>
-    <div class="flex bg-baltic-sea">
-      <div class="flex items-center px-10 py-3 space-x-7 bg-dark-gray">
+        <img src="https://dcbadge.vercel.app/api/shield/704918773035171931?theme=gray&logoColor=presence"
+          alt="Discord Status" width="250" class="animate_animated animate__bounceIn"
+          onclick="window.open('https://discord.com/users/704918773035171931', '_blank')">
+      </nav>
+      <div class="flex flex-col md:flex-row bg-baltic-sea">
+        <div class="flex flex-col md:flex-row items-center px-4 md:px-10 py-3 space-x-0 md:space-x-7 bg-dark-gray">
         <router-link to="/" class="text-red-500 hover:bg-gray-800 animated-link" active-class="text-blue-500 font-bold"
           exact>
           <div class="flex items-center mr-3">
@@ -71,6 +71,18 @@
 import moment from 'moment-timezone'
 
 export default {
+  setup() {
+    const route = useRoute()
+
+    const newroutename = computed(() => {
+      return route.name.charAt(0).toUpperCase() + route.name.slice(1)
+    })
+
+    return {
+      route,
+      newroutename,
+    }
+  },
   methods: {
     changeColor() {
       const randomColor =
@@ -101,18 +113,14 @@ export default {
       }
     },
     getTimezoneStatus() {
-      const zurichTime = moment().tz('Europe/Zurich')
-      const zurichHour = zurichTime.hour()
+      const time = moment().tz('Europe/Zurich')
+      const hour = time.hour()
 
-      if (zurichHour >= 22 || zurichHour < 6) {
-        return 'Sleeping 😴'
+      if (hour >= 22 || hour < 6) {
+        return '😴'
       } else {
-        return 'Awake 🌞'
+        return '🌞'
       }
-    },
-    getTime() {
-      const zurichTime = moment().tz('Europe/Zurich')
-      return zurichTime.format('HH:mm')
     },
   },
   mounted() {
