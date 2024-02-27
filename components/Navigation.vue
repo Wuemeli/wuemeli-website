@@ -30,7 +30,7 @@
         <router-link to="/experience" class="text-red-500 hover:bg-gray-800 animated-link"
           active-class="text-blue-500 font-bold" exact>
           <div class="flex items-center mr-3">
-            <img src="/icons/js.svg" alt="JS icon" class="w-5 h-auto mr-2" />
+            <NuxtImg src="/icons/js.svg" alt="JS icon" class="w-5 h-auto mr-2" />
             <p>Experience.js</p>
           </div>
         </router-link>

@@ -24,10 +24,6 @@ module.exports = {
     require('tailwindcss-animated'),
     require('tailwind-typewriter')({
       wordsets: {
-        skills: {
-          words: ['Discord Bot', 'Full Stack Applicatios', 'Networking', 'Security', 'Linux'],
-          delay: 3
-        },
         hello: {
           words: ['Hello', 'Bonjour', 'Hola', 'Ciao', 'Gruezi', 'こんにちは', '안녕하세요', 'สวัสดี', '你好'],
           delay: 1
