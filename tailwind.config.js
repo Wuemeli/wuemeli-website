@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-animated'),
+    require('@tailwindcss/typography'),
     require('tailwind-typewriter')({
       wordsets: {
         hello: {

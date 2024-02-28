@@ -20,6 +20,7 @@
     "@nuxt/content": "^2.12.0",
     "@nuxt/image": "rc",
     "@nuxtjs/robots": "^3.0.0",
+    "@tailwindcss/typography": "^0.5.10",
     "animate.css": "^4.1.1",
     "moment-timezone": "^0.5.43",
     "nuxt": "^3.7.4",

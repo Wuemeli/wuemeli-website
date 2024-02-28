@@ -8,7 +8,7 @@
       <p class="my-4 text-gray-500">
         by, {{ doc.author }}
       </p>
-      <div class="prose prose-lg first-letter:text-3xl first-letter:text-blue-600">
+      <div class="first-letter:text-3xl first-letter:text-blue-600">
         <ContentRenderer :value="doc" />
       </div>
     </ContentDoc>
