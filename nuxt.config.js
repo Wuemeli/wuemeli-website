@@ -34,6 +34,10 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap', '@nuxt/image', '@nuxt/content'],
 
+  site: {
+    url: 'https://wuemeli.com',
+  },
+  
   content: {
     highlight: {
       theme: 'github-light',
