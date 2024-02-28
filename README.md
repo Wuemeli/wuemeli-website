@@ -13,7 +13,7 @@
 - Responsive Design
 - Dark Mode
 - Projects & Experience & Homeserver & CodingStats & Github Sections
-- Blog Section
+- Blog Section (Soon)
 
 ## 🪺 Preqrequisites
 Before you begin, ensure you have met the following requirements: <br>
