@@ -32,7 +32,14 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css', 'animate.css/animate.min.css'],
 
-  modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap', '@nuxt/image'],
+  modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap', '@nuxt/image', '@nuxt/content'],
+
+  content: {
+    highlight: {
+      theme: 'github-dark',
+      langs: ['javascript', 'typescript', 'json', 'css', 'scss', 'html', 'vue', 'markdown', 'bash', 'yaml', 'python', 'java', 'csharp', 'php', 'ruby', 'go', 'rust', 'swift', 'kotlin', 'dart', 'c', 'cpp', 'shell', 'plaintext'],
+    }
+  },
 
   robots: {
     UserAgent: '*',

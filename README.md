@@ -9,6 +9,12 @@
 - [NuxtJS](https://nuxt.com) - The Framework used
 - [VueJS](https://vuejs.org) - The Framework used
 
+## 📄 Features
+- Responsive Design
+- Dark Mode
+- Projects & Experience & Homeserver & CodingStats & Github Sections
+- Blog Section
+
 ## 🪺 Preqrequisites
 Before you begin, ensure you have met the following requirements: <br>
 Bun.sh is installed on your system.  <br>
