@@ -5,7 +5,6 @@ description: >
   I recently identified some security vulnerabilities in discord.rocks, a vanity invite generator for Discord servers. Although I informed the website owner and the issues have been resolved, I'd like to share my process and findings to highlight the importance of robust security measures.
 ---
 
-
 ## Introduction
 
 I had already informed the owner of the website, and he fixed the security leaks. Additionally, what I did was not hacking; I merely identified some security vulnerabilities. Furthermore, this process was quite simple, and anyone could do it. So, let’s begin:
