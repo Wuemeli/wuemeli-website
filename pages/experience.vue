@@ -18,6 +18,10 @@
         <span class="ml-4 text-xl font-semibold text-light-gray">VueJS</span>
       </div>
       <div class="flex items-center">
+        <NuxtImg src="/icons/nuxtjs.svg" alt="NuxtJS Icon" class="h-12 w-12" />
+        <span class="ml-4 text-xl font-semibold text-light-gray">NuxtJS</span>
+      </div>
+      <div class="flex items-center">
         <NuxtImg src="/icons/docker.svg" alt="Docker Icon" class="h-12 w-12" />
         <span class="ml-4 text-xl font-semibold text-light-gray">Docker</span>
       </div>
@@ -54,10 +58,6 @@
       <div class="flex items-center">
         <NuxtImg src="/icons/python.svg" alt="Python Icon" class="h-12 w-12" />
         <span class="ml-4 text-xl font-semibold text-light-gray">Python</span>
-      </div>
-      <div class="flex items-center">
-        <NuxtImg src="/icons/nuxtjs.svg" alt="NuxtJS Icon" class="h-12 w-12" />
-        <span class="ml-4 text-xl font-semibold text-light-gray">NuxtJS</span>
       </div>
     </div>
   </div>
