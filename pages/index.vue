@@ -9,12 +9,13 @@
         I love automations and developing web applications.
       </p>
       <p class="mt-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-light-gray">
-        I pay attention to <span class="has-tooltip text-pink-500 border-2 border-pink-500 px-2 py-1 rounded">details<span
-            class='tooltip rounded shadow-lg p-1 -mt-8'><img src="/img/details.gif" alt="Details GIF"
-              ></span></span> and I'm
+        I pay attention to <span
+          class="has-tooltip text-pink-500 border-2 border-pink-500 px-2 py-1 rounded">details<span
+            class='tooltip rounded shadow-lg p-1 -mt-8'><img class="plausible-event-name=Details+Hover" src="
+              /img/details.gif" alt="Details GIF"></span></span> and I'm
         always eager to <span class="has-tooltip text-blue-500 border-2 border-blue-500 px-2 py-1 rounded">learn<span
-            class='tooltip rounded shadow-lg p-1 -mt-8'><img src="/img/learn.gif" alt="Learn GIF"
-              ></span></span> new
+            class='tooltip rounded shadow-lg p-1 -mt-8'><img class="plausible-event-name=Learn+Hover"
+              src="/img/learn.gif" alt="Learn GIF"></span></span> new
         things.
       </p>
     </div>
