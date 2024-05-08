@@ -10,7 +10,13 @@ export default defineNuxtConfig({
         lang: 'en'
       },
       script: [
-        { defer: true, dataDomain: "wuemeli.com", src: "https://googleisbad.wuemeli.com/js/script.outbound-links.tagged-events.js" }
+        { defer: true, dataDomain: "wuemeli.com", src: "https://googleisbad.wuemeli.com/js/script.outbound-links.tagged-events.js" },
+        {
+          children: `
+            window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+          `,
+          type: 'text/javascript',
+        },
       ],
       link: [
         { rel: 'preload', href: '/img/homeserver.jpg', as: 'image' },
