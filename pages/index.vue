@@ -6,18 +6,28 @@
       <span class="text-1xl sm:text-3xl md:text-4xl lg:text-0xl font-semibold text-light-gray">Full-stack web developer
         from the <img src="/icons/world.gif" alt="World icon" class="w-11 h-11 inline-block" /></span>
       <p class="mt-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-light-gray">
-        I love automations and developing web applications.
-      </p>
-      <p class="mt-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-light-gray">
-        I pay attention to <span
-          class="has-tooltip text-pink-500 border-2 border-pink-500 px-2 py-1 rounded plausible-event-name=Details+Hover">details<span
+        I pay attention to <span class="has-tooltip text-pink-500 border-2 border-pink-500 px-2 py-1 rounded"
+          :class="{ 'plausible-event-name=Details+Hover': isHovered && isClicked }" @mouseover="isHovered = true"
+          @mouseout="isHovered = false" @click="isClicked = true">details<span
             class='tooltip rounded shadow-lg p-1 -mt-8'><img src="/img/details.gif" alt="Details GIF"></span></span> and
         I'm
-        always eager to <span
-          class="has-tooltip text-blue-500 border-2 border-blue-500 px-2 py-1 rounded plausible-event-name=Learn+Hover">learn<span
+        always eager to <span class="has-tooltip text-blue-500 border-2 border-blue-500 px-2 py-1 rounded"
+          :class="{ 'plausible-event-name=Learn+Hover': isHovered && isClicked }" @mouseover="isHovered = true"
+          @mouseout="isHovered = false" @click="isClicked = true">learn<span
             class='tooltip rounded shadow-lg p-1 -mt-8'><img src="/img/learn.gif" alt="Learn GIF"></span></span> new
         things.
       </p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isHovered: false,
+      isClicked: false,
+    };
+  },
+};
+</script>
