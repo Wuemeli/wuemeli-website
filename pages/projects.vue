@@ -29,7 +29,7 @@
             <p class="text-gray-600">{{ truncateDescription(repo.description) }}</p>
             <div class="flex justify-between items-center mt-4">
               <a :href="repo.html_url" target="_blank" rel="noopener noreferrer"
-                class="inline-block bg-dune text-white px-6 py-3 rounded transform transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">Check
+                class="plausible-event-name=Project+Click inline-block bg-dune text-white px-6 py-3 rounded transform transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110">Check
                 it Out</a>
               <span class="text-yellow-500">{{ repo.stargazers_count }} Stars</span>
             </div>
