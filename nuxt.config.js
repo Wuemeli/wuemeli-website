@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         lang: 'en'
       },
       script: [
-        { defer: true, dataDomain: "tor-relay.dev", src: "https://googleisbad.wuemeli.com/js/script.js" }
+        { defer: true, dataDomain: "wuemeli.com", src: "https://googleisbad.wuemeli.com/js/script.js" }
       ],
       link: [
         { rel: 'preload', href: '/img/homeserver.jpg', as: 'image' },
