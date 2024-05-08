@@ -9,6 +9,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
+      script: [
+        { defer: true, dataDomain: "tor-relay.dev", src: "https://googleisbad.wuemeli.com/js/script.js" }
+      ],
       link: [
         { rel: 'preload', href: '/img/homeserver.jpg', as: 'image' },
         { rel: 'preload', href: 'https://api.github.com/users/wuemeli/repos', as: 'fetch' },
@@ -37,7 +40,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://wuemeli.com',
   },
-  
+
   content: {
     highlight: {
       theme: 'github-light',
