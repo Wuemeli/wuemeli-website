@@ -7,21 +7,11 @@
         {{ pgpKey }}
       </pre>
     </div>
-    <div class="p-4 border border-gray-200 rounded-md mt-8 flex justify-between">
-      <div class="w-1/2">
-        <p class="font-semibold">Enter a PGP Message:</p>
-        <textarea class="w-full p-2 mt-2 border border-gray-300 rounded-md" v-model="pgpMessage"
-          placeholder="Enter your PGP message here..."></textarea>
-        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md" @click="validatePgpMessage">Validate
-          Message</button>
-        <p v-if="validationResult !== null" class="mt-2 text-green-600 font-semibold">{{ validationResult }}</p>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
-import openpgp from 'openpgp';
+import * as openpgp from 'openpgp';
 
 export default {
   data() {
@@ -81,18 +71,21 @@ BjFvFmHguxs=
 -----END PGP PUBLIC KEY BLOCK-----`,
     };
   },
+  //old and doesnt work i just left it here bcs maybe i will use it later
   methods: {
     async validatePgpMessage() {
       try {
-        const { keys: [publicKey] } = await openpgp.key.readArmored(this.pgpKey);
         const { data: decrypted } = await openpgp.decrypt({
           message: await openpgp.message.readArmored(this.pgpMessage),
-          publicKeys: publicKey,
+          publicKeys: (await openpgp.key.readArmored(this.pgpKey)).keys,
         });
-        this.validationResult = decrypted;
+        this.validationResult = decrypted.data;
       } catch (error) {
+        console.error(error);
         this.validationResult = 'Invalid PGP message';
       }
     },
   },
 };
+
+</script>

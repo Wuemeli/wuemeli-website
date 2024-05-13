@@ -25,8 +25,11 @@
     "moment-timezone": "^0.5.43",
     "nuxt": "^3.7.4",
     "nuxt-simple-sitemap": "^4.0.0",
+    "openpgp": "^5.11.1",
     "tailwind-typewriter": "^1.0.1",
-    "tailwindcss-animated": "^1.0.1"
+    "tailwindcss-animated": "^1.0.1",
+    "typescript": "^5.4.5",
+    "vue-tsc": "^2.0.17"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.0",
