@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import * as openpgp from 'openpgp';
+import openpgp from 'openpgp';
 
 export default {
   data() {
@@ -84,23 +84,15 @@ BjFvFmHguxs=
   methods: {
     async validatePgpMessage() {
       try {
-        const publicKeyObj = (await openpgp.key.readArmored(this.pgpKey)).keys[0];
-        await publicKeyObj.getEncryptionKeyPacket();
-        const messageObj = await openpgp.message.readArmored(this.pgpMessage);
-        const options = {
-          message: messageObj,
-          publicKeys: publicKeyObj
-        };
-        const decrypted = await openpgp.decrypt(options);
-        if (decrypted.data.trim() === "") {
-          this.validationResult = "Valid PGP message.";
-        } else {
-          this.validationResult = "Invalid PGP message.";
-        }
+        const { keys: [publicKey] } = await openpgp.key.readArmored(this.pgpKey);
+        const { data: decrypted } = await openpgp.decrypt({
+          message: await openpgp.message.readArmored(this.pgpMessage),
+          publicKeys: publicKey,
+        });
+        this.validationResult = decrypted;
       } catch (error) {
-        this.validationResult = "Error: " + error.message;
+        this.validationResult = 'Invalid PGP message';
       }
     },
   },
 };
-</script>
