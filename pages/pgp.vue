@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import * as openpgp from 'openpgp';
+//import * as openpgp from 'openpgp';
 
 export default {
   data() {
@@ -72,6 +72,7 @@ BjFvFmHguxs=
     };
   },
   //old and doesnt work i just left it here bcs maybe i will use it later
+  /*
   methods: {
     async validatePgpMessage() {
       try {
@@ -86,6 +87,7 @@ BjFvFmHguxs=
       }
     },
   },
+  */
 };
 
 </script>
