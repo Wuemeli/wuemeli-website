@@ -2,10 +2,12 @@
   <div class="max-w-4xl px-10 mx-auto space-y-8 text-center">
     <div class="p-4 border border-gray-200 rounded-md">
       <p class="font-semibold">My PGP Key 🔑</p>
+      <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x105aaf7c3172e132a162a6b5a50c921e7c18b3d7"
+        class="text-blue-500">Download Key</a>
       <br />
-      <pre class="text-left text-white">
+      <pre class=" text-left text-white">
         {{ pgpKey }}
-      </pre>
+        </pre>
     </div>
   </div>
 </template>

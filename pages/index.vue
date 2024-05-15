@@ -11,7 +11,7 @@
             class='tooltip rounded shadow-lg p-1 -mt-8'><img src="/img/details.gif" alt="Details GIF"></span></span> and
         I'm
         always eager to <span @mouseover="learnhover" class="has-tooltip text-blue-500 border-2 border-blue-500 px-2 py-1 rounded">learn<span
-            class='tooltip rounded shadow-lg p-1 -mt-8'><img src="/img/learn.gif" alt="Learn GIF" "></span></span> new
+            class='tooltip rounded shadow-lg p-1 -mt-8'><img src="/img/learn.gif" alt="Learn GIF"></span></span> new
         things.
       </p>
     </div>
