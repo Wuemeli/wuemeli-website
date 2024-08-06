@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   ssr: true,
   devtools: true,
+
   app: {
     head: {
       charset: 'utf-8',
@@ -18,13 +19,6 @@ export default defineNuxtConfig({
           type: 'text/javascript',
         },
       ],
-      link: [
-        { rel: 'preload', href: '/img/homeserver.jpg', as: 'image' },
-        { rel: 'preload', href: 'https://api.github.com/users/wuemeli/repos', as: 'fetch' },
-        { rel: 'preload', href: 'https://github-readme-stats.vercel.app/api/wakatime?username=wuemeli&theme=radical', as: 'image' },
-        { rel: 'preload', href: 'https://stats.dooboo.io/api/github-stats?login=wuemeli', as: 'image' },
-        { rel: 'preload', href: 'https://github-readme-streak-stats.herokuapp.com/?user=Wuemeli&theme=radical&border=false', as: 'image' },
-      ],
       meta: [
         { hid: 'description', name: 'description', content: 'Explore Wuemeli\'s impressive portfolio of web development projects, including Nuxt.js and Discord.js creations. Discover innovative web solutions and creative designs.' },
         { name: 'keywords', content: 'portfolio, web development, Nuxt.js, Discord.js, Wuemeli, projects, creative designs, web solutions' },
@@ -40,7 +34,6 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css', 'animate.css/animate.min.css'],
-
   modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap', '@nuxt/image', '@nuxt/content'],
 
   site: {
@@ -65,4 +58,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  compatibilityDate: '2024-08-06',
 })
