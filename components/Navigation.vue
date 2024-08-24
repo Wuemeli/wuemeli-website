@@ -14,7 +14,7 @@
             {{ newroutename }} - Wuemelis Portfolio {{ getTimezoneStatus() }}
           </p>
         </div>
-        <img src="https://dcbadge.vercel.app/api/shield/704918773035171931?theme=gray&logoColor=presence"
+        <img src="https://dcbadge.limes.pink/api/shield/704918773035171931?theme=gray&logoColor=presence"
           alt="Discord Status" width="250" class="animate_animated animate__bounceIn"
           onclick="window.open('https://discord.com/users/704918773035171931', '_blank')">
       </nav>
