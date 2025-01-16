@@ -55,13 +55,6 @@
             <p>Github.gh</p>
           </div>
         </router-link>
-        <router-link to="/homeserver" class="text-red-500 hover:bg-gray-800 animated-link"
-          active-class="text-blue-500 font-bold" exact>
-          <div class="flex items-center">
-            <img src="/icons/proxmox.svg" alt="Proxmox icon" class="w-5 h-auto mr-2" />
-            <p>HomeServer.hs</p>
-          </div>
-        </router-link>
       </div>
     </div>
   </div>
