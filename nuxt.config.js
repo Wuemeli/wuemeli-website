@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css', 'animate.css/animate.min.css'],
-  modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap', '@nuxt/image', '@nuxt/content'],
+  modules: ['@nuxtjs/robots', 'nuxt-simple-sitemap', '@nuxt/image', '@nuxt/content', '@sentry/nuxt/module'],
 
   site: {
     url: 'https://wuemeli.com',
