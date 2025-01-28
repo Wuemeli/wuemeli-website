@@ -27,7 +27,7 @@
     "nuxt-simple-sitemap": "^4.0.0",
     "openpgp": "^6.0.0",
     "tailwind-typewriter": "^1.0.1",
-    "tailwindcss-animated": "^1.0.1"
+    "tailwindcss-animated": "^2.0.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.0",
