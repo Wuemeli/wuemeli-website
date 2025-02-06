@@ -30,7 +30,7 @@
     "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.0.0",
+    "@nuxt/devtools": "^2.0.0",
     "autoprefixer": "^10.4.16",
     "eslint-config-prettier": "^9.0.0",
     "postcss": "^8.4.31",
