@@ -11,8 +11,9 @@
                         I'm a <AgeStopwatch class="inline" /> year-old
                         self-taught software developer, security researcher, and
                         privacy activist. I love helping others, making cool
-                        things, and hating bigtech full-time. I also like
-                        Chickens 🐔.
+                        things, and hating big tech as a full-time hobby. Not
+                        only that, but I also like chickens 🐔. (Not to eat
+                        them, don't worry :D)
                     </p>
                 </div>
             </header>

@@ -41,7 +41,7 @@
                     Heckerbot
                 </h3>
                 <p class="text-gray-300 text-sm mb-3">
-                    Discord bot with some community features. Has been shutdown
+                    Discord bot with some community features. Has been shut down
                     :(
                 </p>
                 <a
@@ -100,19 +100,61 @@
                 </a>
             </div>
 
-            <div
-                class="bg-baltic-sea/50 rounded-lg p-6 border border-dune/30 hover:border-gray-500/50 transition-all duration-300 hover:scale-105 md:col-span-2 lg:col-span-1"
-            >
-                <h3
-                    class="text-lg font-semibold mb-2 text-gray-400 flex items-center gap-2"
+            <template v-if="githubRepos.length">
+                <div
+                    v-for="repo in githubRepos"
+                    :key="repo.id"
+                    class="bg-baltic-sea/50 rounded-lg p-6 border border-dune/30 hover:border-gray-500/50 transition-all duration-300 hover:scale-105"
                 >
-                    <span>📚</span>
-                    GitHub Repos
-                </h3>
-                <p class="text-gray-300 text-sm">
-                    Various open source projects and contributions.
-                </p>
-            </div>
+                    <h3
+                        class="text-lg font-semibold mb-2 text-gray-400 flex items-center gap-2"
+                    >
+                        <span>📚</span>
+                        {{ repo.name }}
+                    </h3>
+                    <div class="text-xs text-gray-400 mb-2">
+                        Stars: {{ repo.stargazers_count }}
+                    </div>
+                    <p class="text-gray-300 text-sm mb-3">
+                        {{ repo.description }}
+                    </p>
+                    <a
+                        :href="repo.html_url"
+                        target="_blank"
+                        class="text-green-300 hover:text-green-200 text-sm flex items-center gap-1"
+                    >
+                        <span>🔗</span>
+                        View on GitHub
+                    </a>
+                </div>
+            </template>
+            <template v-else>
+                <div
+                    class="bg-baltic-sea/50 rounded-lg p-6 border border-dune/30 transition-all duration-300 opacity-60"
+                >
+                    <h3
+                        class="text-lg font-semibold mb-2 text-gray-400 flex items-center gap-2"
+                    >
+                        <span>📚</span>
+                        Loading top GitHub repositories...
+                    </h3>
+                </div>
+            </template>
         </div>
     </section>
 </template>
+
+<script setup>
+const githubRepos = ref([]);
+
+onMounted(async () => {
+    const res = await fetch(
+        "https://api.github.com/users/wuemeli/repos?per_page=100",
+    );
+    const data = await res.json();
+    githubRepos.value = data
+        .filter((repo) => !repo.fork)
+        .sort((a, b) => b.stargazers_count - a.stargazers_count)
+        .slice(0, 5);
+});
+</script>
