@@ -10,13 +10,15 @@
           <p class="mb-6">
             I'm a <AgeStopwatch class="inline" /> year-old self-taught software
             developer, security researcher, and privacy activist. I love helping
-            others, making cool things, and professional bigtech hater.
+            others, making cool things, and professional bigtech hater. I also
+            like Penguins 🐧.
           </p>
         </div>
       </header>
 
       <Skills />
       <Projects />
+      <Why />
       <Donating />
       <Contact />
 
@@ -45,8 +47,6 @@
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   </div>
 </template>
@@ -67,8 +67,8 @@ const triggerConfetti = () => {
     confetti.push({
       x: Math.random() * canvas.width,
       y: -10,
-      vx: (Math.random() - 0.5) * 6,
-      vy: Math.random() * 3 + 2,
+      vx: (Math.random() - 0.5) * 10,
+      vy: Math.random() * 3 + 6,
       color: `hsl(${Math.random() * 360}, 70%, 60%)`,
       size: Math.random() * 6 + 3,
       rotation: Math.random() * 360,
@@ -83,7 +83,7 @@ const triggerConfetti = () => {
       piece.x += piece.vx;
       piece.y += piece.vy;
       piece.rotation += piece.rotationSpeed;
-      piece.vy += 0.1; // gravity
+      piece.vy += 0.1;
 
       ctx.save();
       ctx.translate(piece.x, piece.y);
@@ -93,13 +93,13 @@ const triggerConfetti = () => {
       ctx.restore();
 
       if (piece.y > canvas.height + 50) {
-        confetti.splice(index, 1);
+        piece.y = -10;
+        piece.x = Math.random() * canvas.width;
+        piece.vy = Math.random() * 3 + 2;
       }
     });
 
-    if (confetti.length > 0) {
-      requestAnimationFrame(animate);
-    }
+    requestAnimationFrame(animate);
   };
 
   animate();
