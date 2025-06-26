@@ -1,234 +1,125 @@
 <template>
-  <DesktopLoadingScreen />
-  <div class="desktop-container w-full min-h-screen">
-    <DesktopBackground>
-      <DesktopIcons>
-        <div
-          v-for="icon in desktopIcons"
-          :key="icon.id"
-          :style="{
-            left: `${icon.position.x}px`,
-            top: `${icon.position.y}px`,
-            position: 'absolute',
-            width: '80px',
-            textAlign: 'center',
-          }"
-        >
-          <DesktopIcon
-            :label="icon.label"
-            :color="icon.color"
-            @click="openWindow(icon.id, icon.title, icon.component, icon.icon)"
-          >
-            <template #icon>
-              <component :is="icon.icon" />
-            </template>
-          </DesktopIcon>
+  <div class="min-h-screen bg-dark-gray text-light-gray font-mono">
+    <div class="container mx-auto px-6 py-12 pt-24 max-w-4xl">
+      <header class="mb-16 animate-fade-in">
+        <h1 class="text-4xl font-bold mb-6 text-light-gray">
+          Hey there, I am Wuemeli,
+        </h1>
+
+        <div class="text-lg leading-relaxed">
+          <p class="mb-6">
+            I'm a <AgeStopwatch class="inline" /> year-old self-taught software
+            developer, security researcher, and privacy activist. I love helping
+            others, making cool things, and professional bigtech hater.
+          </p>
         </div>
-      </DesktopIcons>
+      </header>
 
-      <template v-for="window in activeWindows" :key="window.id">
-        <DesktopWindow
-          :isVisible="window.isVisible"
-          :position="window.position"
-          :title="window.title"
-          @close="closeWindow(window.id)"
-          @positionchanged="updateWindowPosition(window.id, $event)"
-        >
-          <component :is="window.component" />
-        </DesktopWindow>
-      </template>
+      <Skills />
+      <Projects />
+      <Donating />
+      <Contact />
 
-      <DesktopTaskbar
-        :activeWindows="visibleActiveWindows"
-        @window-focus="focusWindow"
-        @open-window="openWindow"
-      />
-    </DesktopBackground>
+      <section class="mb-16 animate-slide-up text-center">
+        <div class="relative">
+          <canvas
+            ref="confettiCanvas"
+            class="absolute inset-0 pointer-events-none z-10"
+            :width="canvasWidth"
+            :height="canvasHeight"
+          ></canvas>
+          <div class="relative z-20">
+            <p
+              class="text-gray-300 text-lg leading-relaxed mb-6 max-w-2xl mx-auto"
+            >
+              Well, that's me! Thanks for taking the time to learn about what I
+              do and what I care about. If any of this resonates with you, or if
+              you have questions about my work, don't hesitate to reach out.
+            </p>
+            <button
+              @click="triggerConfetti"
+              class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+            >
+              🎉 Finished Reading!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
   </div>
 </template>
 
-<script>
-import { DesktopLoadingScreen } from '#components'
+<script setup>
+const confettiCanvas = ref(null);
+const canvasWidth = ref(800);
+const canvasHeight = ref(600);
 
-export default {
-  setup() {
-    const windowManager = useWindowManager()
-    return {
-      windowManager,
+const triggerConfetti = () => {
+  if (!confettiCanvas.value) return;
+
+  const canvas = confettiCanvas.value;
+  const ctx = canvas.getContext("2d");
+  const confetti = [];
+
+  for (let i = 0; i < 100; i++) {
+    confetti.push({
+      x: Math.random() * canvas.width,
+      y: -10,
+      vx: (Math.random() - 0.5) * 6,
+      vy: Math.random() * 3 + 2,
+      color: `hsl(${Math.random() * 360}, 70%, 60%)`,
+      size: Math.random() * 6 + 3,
+      rotation: Math.random() * 360,
+      rotationSpeed: (Math.random() - 0.5) * 5,
+    });
+  }
+
+  const animate = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    confetti.forEach((piece, index) => {
+      piece.x += piece.vx;
+      piece.y += piece.vy;
+      piece.rotation += piece.rotationSpeed;
+      piece.vy += 0.1; // gravity
+
+      ctx.save();
+      ctx.translate(piece.x, piece.y);
+      ctx.rotate((piece.rotation * Math.PI) / 180);
+      ctx.fillStyle = piece.color;
+      ctx.fillRect(-piece.size / 2, -piece.size / 2, piece.size, piece.size);
+      ctx.restore();
+
+      if (piece.y > canvas.height + 50) {
+        confetti.splice(index, 1);
+      }
+    });
+
+    if (confetti.length > 0) {
+      requestAnimationFrame(animate);
     }
-  },
-  data() {
-    return {
-      activeWindows: [],
-      desktopIcons: [],
-    }
-  },
-  computed: {
-    visibleActiveWindows() {
-      return this.activeWindows.filter((w) => w.isVisible)
-    },
-  },
-  methods: {
-    focusWindow(id) {
-      const window = this.activeWindows.find((w) => w.id === id)
-      if (window) {
-        windowManager.focusWindow(window)
-      }
-    },
+  };
 
-    openWindow(id, title, component, icon) {
-      const existingWindow = this.activeWindows.find((w) => w.id === id)
+  animate();
+};
 
-      const resolveComponent = () => {
-        return markRaw(
-          defineAsyncComponent(() => import(`@/components/${component}.vue`)),
-        )
-      }
+const updateCanvasSize = () => {
+  if (typeof window !== "undefined") {
+    canvasWidth.value = window.innerWidth;
+    canvasHeight.value = window.innerHeight;
+  }
+};
 
-      if (existingWindow) {
-        existingWindow.isVisible = true
-      } else {
-        const position = this.findOptimalWindowPosition()
-        console.log(position)
+onMounted(() => {
+  updateCanvasSize();
+  window.addEventListener("resize", updateCanvasSize);
+});
 
-        this.activeWindows.push({
-          id,
-          title,
-          icon,
-          component: resolveComponent(),
-          isVisible: true,
-          position,
-        })
-      }
-
-      if (typeof plausible === 'function') {
-        plausible(`${title} Window Opened`)
-      }
-    },
-
-    // Thanks ChatGPT :)
-    findOptimalWindowPosition() {
-      const gridSize = 50
-      const windowWidth = 600
-      const windowHeight = 400
-      const screenPadding = 20
-
-      const viewportWidth = window.innerWidth - screenPadding * 2
-      const viewportHeight = window.innerHeight - screenPadding * 2
-
-      const maxCols = Math.floor(viewportWidth / gridSize)
-      const maxRows = Math.floor(viewportHeight / gridSize)
-
-      let occupancyGrid = []
-      for (let i = 0; i < maxRows; i++) {
-        occupancyGrid[i] = Array(maxCols).fill(false)
-      }
-
-      this.activeWindows.forEach((win) => {
-        if (!win.isVisible) return
-
-        const startCol = Math.floor((win.position.x - screenPadding) / gridSize)
-        const startRow = Math.floor((win.position.y - screenPadding) / gridSize)
-        const endCol = Math.min(
-          maxCols - 1,
-          Math.floor((win.position.x + windowWidth - screenPadding) / gridSize),
-        )
-        const endRow = Math.min(
-          maxRows - 1,
-          Math.floor(
-            (win.position.y + windowHeight - screenPadding) / gridSize,
-          ),
-        )
-
-        for (let r = startRow; r <= endRow; r++) {
-          if (r >= 0 && r < maxRows) {
-            for (let c = startCol; c <= endCol; c++) {
-              if (c >= 0 && c < maxCols) {
-                occupancyGrid[r][c] = true
-              }
-            }
-          }
-        }
-      })
-
-      for (let r = 0; r < maxRows - Math.ceil(windowHeight / gridSize); r++) {
-        for (let c = 0; c < maxCols - Math.ceil(windowWidth / gridSize); c++) {
-          let canFit = true
-
-          for (
-            let i = r;
-            i < r + Math.ceil(windowHeight / gridSize) && canFit;
-            i++
-          ) {
-            for (
-              let j = c;
-              j < c + Math.ceil(windowWidth / gridSize) && canFit;
-              j++
-            ) {
-              if (i >= maxRows || j >= maxCols || occupancyGrid[i][j]) {
-                canFit = false
-              }
-            }
-          }
-
-          if (canFit) {
-            return {
-              x: c * gridSize + screenPadding,
-              y: r * gridSize + screenPadding,
-            }
-          }
-        }
-      }
-
-      const offset = (this.activeWindows.length % 10) * 30
-      return {
-        x: screenPadding + offset,
-        y: screenPadding + offset,
-      }
-    },
-
-    closeWindow(id) {
-      const windowIndex = this.activeWindows.findIndex((w) => w.id === id)
-      if (windowIndex >= 0) {
-        this.activeWindows[windowIndex].isVisible = false
-
-        if (typeof plausible === 'function') {
-          plausible(`${this.activeWindows[windowIndex].title} Window Closed`)
-        }
-      }
-    },
-
-    updateWindowPosition(id, position) {
-      const window = this.activeWindows.find((w) => w.id === id)
-      if (window) {
-        window.position = position
-      }
-    },
-
-    generateIconPosition(index) {
-      const x = 40
-      const y = 40 + index * 90
-      return { x, y }
-    },
-
-    initializeIcons() {
-      this.desktopIcons = iconDefinitions.map((icon, index) => {
-        return {
-          ...icon,
-          position: this.generateIconPosition(index),
-        }
-      })
-    },
-  },
-  mounted() {
-    this.initializeIcons()
-  },
-}
+onUnmounted(() => {
+  if (typeof window !== "undefined") {
+    window.removeEventListener("resize", updateCanvasSize);
+  }
+});
 </script>
-
-<style>
-.desktop-container {
-  position: relative;
-  cursor: default;
-}
-</style>
