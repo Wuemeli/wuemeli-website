@@ -20,7 +20,6 @@
         <h3
           class="text-2xl font-bold mb-4 text-green-300 flex items-center gap-2"
         >
-          <span>🖥️</span>
           Backend Development
         </h3>
         <p class="text-gray-300 text-lg leading-relaxed">
@@ -40,7 +39,6 @@
         <h3
           class="text-2xl font-bold mb-4 text-purple-300 flex items-center gap-2"
         >
-          <span>🚀</span>
           DevOps & Infrastructure
         </h3>
         <p class="text-gray-300 text-lg leading-relaxed">
@@ -64,7 +62,6 @@
         <h3
           class="text-2xl font-bold mb-4 text-blue-300 flex items-center gap-2"
         >
-          <span>🎨</span>
           Frontend Development
         </h3>
         <p class="text-gray-300 text-lg leading-relaxed">
@@ -81,7 +78,6 @@
         <h3
           class="text-2xl font-bold mb-4 text-red-300 flex items-center gap-2"
         >
-          <span>🔒</span>
           Penetration Testing & Security
         </h3>
         <p class="text-gray-300 text-lg leading-relaxed">

@@ -9,7 +9,6 @@
         <h3
           class="text-xl font-semibold mb-3 text-green-400 flex items-center gap-2"
         >
-          <span>🕵️‍♂️</span>
           Why Privacy?
         </h3>
         <p class="text-gray-300 leading-relaxed">
@@ -27,7 +26,6 @@
         <h3
           class="text-xl font-semibold mb-3 text-red-400 flex items-center gap-2"
         >
-          <span>🏢</span>
           Why I Dislike Big Tech
         </h3>
         <p class="text-gray-300 leading-relaxed">
@@ -42,7 +40,6 @@
         <h3
           class="text-xl font-semibold mb-3 text-blue-400 flex items-center gap-2"
         >
-          <span>🌱</span>
           My Philosophy
         </h3>
         <p class="text-gray-300 leading-relaxed">
@@ -175,7 +172,7 @@
 }
 
 .company-hate::after {
-  content: "";
+  content: '';
   opacity: 0;
   transition: opacity 0.15s;
 }

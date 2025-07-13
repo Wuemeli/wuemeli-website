@@ -20,27 +20,16 @@ body {
 }
 
 .brush-name {
-  background: linear-gradient(45deg, #ff6b9d, #e83e8c, #ff1744);
+  background: linear-gradient(45deg, #ff6b9d, #e83e8c, #ff1744, #ffd6e0 80%);
   background-size: 300% 300%;
-  animation: gradientShift 3s ease infinite;
+  animation: gradientShift 3s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   position: relative;
   font-weight: 700;
-  text-shadow: 0 0 20px rgba(255, 107, 157, 0.3);
-}
-
-.brush-name::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -10px;
-  right: -10px;
-  bottom: -5px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath d='M5,10 Q25,5 50,10 T95,10' stroke='%23ff6b9d' stroke-width='2' fill='none' opacity='0.3'/%3E%3C/svg%3E")
-    repeat-x;
-  background-size: 100px 20px;
-  pointer-events: none;
-  z-index: -1;
+  text-shadow:
+    0 0 24px rgba(255, 107, 157, 0.45),
+    0 2px 8px #ff6b9d44;
+  filter: drop-shadow(0 0 8px #ff6b9d88);
 }
