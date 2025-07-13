@@ -119,7 +119,7 @@
         <Skill name="Tor" icon="/icons/tor.svg" color="orange" /> relay.
         <br /><br />
         I use the
-        <Skill name="Zed" icon="/icons/zed.png" color="blue" /> code editor to
+        <Skill name="Zed" icon="/icons/zed.svg" color="blue" /> code editor to
         write code.
       </p>
     </div>
