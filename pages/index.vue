@@ -1,9 +1,10 @@
 <template>
-    <div class="min-h-screen bg-dark-gray text-light-gray font-mono">
+    <div class="min-h-screen bg-dark-gray text-light-gray">
         <div class="container mx-auto px-6 py-12 pt-24 max-w-4xl">
             <header class="mb-16 animate-fade-in">
-                <h1 class="text-4xl font-bold mb-6 text-light-gray">
-                    Hey there, I am Wuemeli,
+                <h1 class="text-4xl font-bold mb-6 text-light-gray typewriter">
+                    Hey there, I am
+                    <span class="brush-name">Wuemeli</span> (he/him),
                 </h1>
 
                 <div class="text-lg leading-relaxed">

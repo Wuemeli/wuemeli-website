@@ -109,7 +109,7 @@
                     <h3
                         class="text-lg font-semibold mb-2 text-gray-400 flex items-center gap-2"
                     >
-                        <span>📚</span>
+                        <span>{{ getRandomEmoji() }}</span>
                         {{ repo.name }}
                     </h3>
                     <div class="text-xs text-gray-400 mb-2">
@@ -157,4 +157,9 @@ onMounted(async () => {
         .sort((a, b) => b.stargazers_count - a.stargazers_count)
         .slice(0, 5);
 });
+
+const getRandomEmoji = () => {
+    const emojis = ["🚀", "🌟", "🔥", "🎉", "🏆"];
+    return emojis[Math.floor(Math.random() * emojis.length)];
+};
 </script>

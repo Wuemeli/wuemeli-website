@@ -12,257 +12,134 @@
                 Sun Tzu
             </p>
         </div>
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                First and foremost, I hate designing frontends. I'm more of the
+                logic guy that would write a web scraper to find the best
+                Mansions. I love collaboration, open source, and sharing
+                knowledge with others.
+            </p>
+
+            <div class="mb-10">
+                <h3
+                    class="text-2xl font-bold mb-4 text-green-300 flex items-center gap-2"
+                >
+                    <span>🖥️</span>
+                    Backend & Infrastructure
+                </h3>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    I enjoy building robust backend systems with
+                    <Skill
+                        name="Node.js"
+                        icon="/icons/nodejs-original.svg"
+                        color="green"
+                    />, <Skill name="Hono" emoji="🔥" color="orange" />,
+                    <Skill
+                        name="Typescript"
+                        icon="/icons/typescript-original.svg"
+                        color="blue"
+                    />,
+                    <Skill
+                        name="Postgres"
+                        icon="/icons/postgresql-original.svg"
+                        color="blue"
+                    />, <Skill name="Drizzle" emoji="💧" color="purple" />,
+                    <Skill
+                        name="Docker"
+                        icon="/icons/docker-original.svg"
+                        color="blue"
+                    />,
+                    <Skill
+                        name="Kubernetes"
+                        icon="/icons/kubernetes-plain.svg"
+                        color="purple"
+                    />,
+                    <Skill
+                        name="Cloudflare Workers"
+                        emoji="☁️"
+                        color="yellow"
+                    />,
+                    <Skill
+                        name="Bun"
+                        icon="/icons/bun-original.svg"
+                        color="orange"
+                    />,
+                    <Skill
+                        name="Python"
+                        icon="/icons/python-original.svg"
+                        color="yellow"
+                    />,
+                    <Skill
+                        name="Git"
+                        icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                        color="gray"
+                    />, and
+                    <Skill
+                        name="MongoDB"
+                        icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                        color="green"
+                    />.
+                </p>
+            </div>
+
+            <div class="mb-10">
+                <h3
+                    class="text-2xl font-bold mb-4 text-blue-300 flex items-center gap-2"
+                >
+                    <span>🎨</span>
+                    Frontend Development
+                </h3>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    While I prefer backend work, I can handle frontend
+                    development with
+                    <Skill
+                        name="HTML"
+                        icon="/icons/html5-original.svg"
+                        color="red"
+                    />,
+                    <Skill
+                        name="CSS"
+                        icon="/icons/css3-original.svg"
+                        color="blue"
+                    />,
+                    <Skill
+                        name="JavaScript"
+                        icon="/icons/javascript-original.svg"
+                        color="yellow"
+                    />
+                    and
+                    <Skill
+                        name="Nuxt"
+                        icon="/icons/nuxtjs-original.svg"
+                        color="green"
+                    />.
+                </p>
+            </div>
+
+            <div class="mb-10">
+                <h3
+                    class="text-2xl font-bold mb-4 text-red-300 flex items-center gap-2"
+                >
+                    <span>🔒</span>
+                    Penetration Testing & Security
+                </h3>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    I also enjoy breaching and tinkering with my own systems and
+                    from friends. I use stuff such as BurpSuite, Shodan, nmap,
+                    sqlmap, wireshark, metasploit and my own cool Python
+                    scripts.
+                </p>
+            </div>
+
             <p class="text-gray-300 text-lg leading-relaxed">
-                I do not like Designing Frontends. I just dont enjoy it.
-                Backends way better anyway.
-                <br /><br />
-                I enjoy coding with
-                <span
-                    class="inline-flex items-center gap-1 text-green-300 font-semibold"
-                >
-                    Node.js
-                    <NuxtImg
-                        src="/icons/nodejs-original.svg"
-                        alt="Node.js"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-orange-300 font-semibold"
-                >
-                    Hono
-                    <span class="text-lg align-middle">🔥</span> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-blue-300 font-semibold"
-                >
-                    Typescript
-                    <NuxtImg
-                        src="/icons/typescript-original.svg"
-                        alt="Typescript"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-blue-300 font-semibold"
-                >
-                    Postgres
-                    <NuxtImg
-                        src="/icons/postgresql-original.svg"
-                        alt="Postgres"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-purple-300 font-semibold"
-                >
-                    Drizzle
-                    <span class="text-lg align-middle">💧</span> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-red-300 font-semibold"
-                >
-                    HTML
-                    <NuxtImg
-                        src="/icons/html5-original.svg"
-                        alt="HTML"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-blue-300 font-semibold"
-                >
-                    CSS
-                    <NuxtImg
-                        src="/icons/css3-original.svg"
-                        alt="CSS"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-yellow-300 font-semibold"
-                >
-                    JavaScript
-                    <NuxtImg
-                        src="/icons/javascript-original.svg"
-                        alt="JavaScript"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-green-300 font-semibold"
-                >
-                    Nuxt
-                    <NuxtImg
-                        src="/icons/nuxtjs-original.svg"
-                        alt="Nuxt"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-cyan-300 font-semibold"
-                >
-                    Tailwind CSS
-                    <NuxtImg
-                        src="/icons/tailwindcss.svg"
-                        alt="Tailwind"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-blue-300 font-semibold"
-                >
-                    Docker
-                    <NuxtImg
-                        src="/icons/docker-original.svg"
-                        alt="Docker"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-purple-300 font-semibold"
-                >
-                    Kubernetes
-                    <NuxtImg
-                        src="/icons/kubernetes-plain.svg"
-                        alt="Kubernetes"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-yellow-300 font-semibold"
-                >
-                    Cloudflare Workers
-                    <span class="text-lg align-middle">☁️</span> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-red-300 font-semibold"
-                >
-                    Kali Linux
-                    <NuxtImg
-                        src="/icons/kali.png"
-                        alt="Kali Linux"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-blue-300 font-semibold"
-                >
-                    Nmap
-                    <NuxtImg
-                        src="/icons/nmap.png"
-                        alt="Nmap"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-purple-300 font-semibold"
-                >
-                    Metasploit
-                    <NuxtImg
-                        src="/icons/metasploit.png"
-                        alt="Metasploit"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-green-300 font-semibold"
-                >
-                    Shodan
-                    <NuxtImg
-                        src="/icons/shodan.png"
-                        alt="Shodan"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-yellow-300 font-semibold"
-                >
-                    SpiderFoot
-                    <NuxtImg
-                        src="/icons/spiderfoot.png"
-                        alt="SpiderFoot"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-gray-300 font-semibold"
-                >
-                    DuckDuckGo
-                    <span class="text-lg align-middle">🦆</span> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-orange-300 font-semibold"
-                >
-                    Bun
-                    <NuxtImg
-                        src="/icons/bun-original.svg"
-                        alt="Bun"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-yellow-300 font-semibold"
-                >
-                    Python
-                    <NuxtImg
-                        src="/icons/python-original.svg"
-                        alt="Python"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-gray-300 font-semibold"
-                >
-                    Git
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                        alt="Git"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-purple-300 font-semibold"
-                >
-                    Tor
-                    <NuxtImg
-                        src="/icons/tor.png"
-                        alt="Tor"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-green-300 font-semibold"
-                >
-                    MongoDB
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                        alt="MongoDB"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-blue-300 font-semibold"
-                >
-                    Zed
-                    <span class="text-lg align-middle">✏️</span> </span
-                >,
-                <span
-                    class="inline-flex items-center gap-1 text-cyan-300 font-semibold"
-                >
-                    Arch Linux w/ Hyprland
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                        alt="Linux"
-                        class="w-6 h-6 inline-block align-middle"
-                    /> </span
-                >. <br /><br />
-                I thrive on collaboration, open source, and sharing knowledge
-                with others. I believe that technology should empower people and
-                make life more interesting. When I'm not coding, you might find
-                me tinkering with Linux setups, automating workflows, or modding
-                games like Counter-Strike and Minecraft. I even created
+                When I'm not coding, you might find me tinkering with
+                <Skill
+                    name="Arch Linux w/ Hyprland"
+                    icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                    color="cyan"
+                />
+                setups, automating workflows, or modding games like
+                Counter-Strike and Minecraft. I even created
                 <a
                     href="https://modrinth.com/mod/wuemelis-utils"
                     target="_blank"
@@ -272,8 +149,8 @@
                 </a>
                 to make the Minecraft experience even better.
                 <br /><br />
-                My toolkit is always growing, and I'm always excited to learn
-                new things, tackle new challenges, and help others do the same.
+                I use the <Skill name="Zed" emoji="✏️" color="blue" /> to write
+                code.
             </p>
         </div>
     </section>
