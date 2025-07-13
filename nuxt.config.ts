@@ -1,46 +1,58 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-  compatibilityDate: "2025-05-15",
+  compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
+
   app: {
     head: {
-      charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1",
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
       title: "Wuemeli's Portfolio",
       htmlAttrs: {
-        lang: "en",
+        lang: 'en',
       },
       meta: [
         {
-          name: "description",
+          name: 'description',
           content:
             "Explore Wuemeli's impressive portfolio of web development projects, including Nuxt.js and Discord.js creations. Discover innovative web solutions and creative designs.",
         },
         {
-          name: "keywords",
+          name: 'keywords',
           content:
-            "portfolio, web development, Nuxt.js, Discord.js, Wuemeli, projects, creative designs, web solutions",
+            'portfolio, web development, Nuxt.js, Discord.js, Wuemeli, projects, creative designs, web solutions',
         },
-        { name: "author", content: "Wuemeli" },
+        { name: 'author', content: 'Wuemeli' },
         {
-          property: "og:title",
+          property: 'og:title',
           content: "Wuemeli's Portfolio 🔥",
         },
         {
-          property: "og:description",
+          property: 'og:description',
           content:
             "Explore Wuemeli's impressive portfolio of web development projects, including Nuxt.js and Discord.js creations. Discover innovative web solutions and creative designs.",
         },
-        { property: "og:type", content: "website" },
+        { property: 'og:type', content: 'website' },
         {
-          property: "og:image",
-          content: "https://wuemeli.com/img/og-image.png",
+          property: 'og:image',
+          content: 'https://wuemeli.com/img/og-image.png',
         },
       ],
     },
   },
-  css: ["~/assets/css/main.css"],
+  css: ['~/assets/css/main.css'],
   vite: { plugins: [tailwindcss()] },
-  modules: ["@nuxt/image", "@nuxtjs/seo"],
-});
+  modules: ['@nuxt/image', '@nuxtjs/seo', '@nuxtjs/plausible'],
+
+  plausible: {
+    domain: 'wuemeli.com',
+    apiHost: 'https://googleisbad.wuemeli.com',
+    autoOutboundTracking: true,
+    autoPageviews: true,
+  },
+
+  sitemap: {
+    enabled: true,
+  },
+})
