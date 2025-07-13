@@ -1,28 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div class="max-w-4xl px-10 mx-auto space-y-8 text-center">
-    <div class="p-4 border border-gray-200 rounded-md">
-      <p class="font-semibold">My PGP Key 🔑</p>
-      <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xcf2e26da8d28766be2e0a2975c455988590b6517"
-        class="text-blue-500">Download Key</a>
-      <br />
-      <pre class=" text-left text-white">
-        {{ pgpKey }}
-        </pre>
-    </div>
-  </div>
-</template>
-
-<script>
-//import * as openpgp from 'openpgp';
-
-export default {
-  data() {
-    return {
-      pgpMessage: '',
-      validationResult: null,
-      pgpKey: `-----BEGIN PGP PUBLIC KEY BLOCK-----
-=======
   <div class="min-h-screen bg-dark-gray text-light-gray font-mono">
     <div class="container mx-auto px-6 py-12 pt-24 max-w-4xl">
       <header class="mb-16 animate-fade-in text-center">
@@ -72,7 +48,7 @@ export default {
             @click="copyKey"
             class="absolute top-4 right-4 bg-dune/20 hover:bg-dune/40 text-light-gray px-3 py-1 rounded text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-dune/50"
           >
-            {{ copied ? "✅ Copied!" : "📋 Copy" }}
+            {{ copied ? '✅ Copied!' : '📋 Copy' }}
           </button>
 
           <pre
@@ -80,7 +56,6 @@ export default {
             class="text-xs text-gray-300 overflow-x-auto whitespace-pre-wrap break-all leading-relaxed"
           >
 -----BEGIN PGP PUBLIC KEY BLOCK-----
->>>>>>> new-website
 
 mQINBGbFmHsBEADg7cKJzVqcoK20e8FfO2wY9B5SEqulD5G6d9EZ/aF3DIYPnWNp
 H6t2VHyVyji/xZuLno3jofY/pKleZ2h8EtyzetWl0B9rYgqWEaADgJRIQ/5LmLMh
@@ -131,30 +106,6 @@ JF/xRSfgNdkmOYMrpYau6o+90Zdajw5icSJ3M/ZwtWFCD47o5Kmc61G7B8SBzNLa
 ujbtyhQm4r6wzZaWglKXNkZabsU4YJFXrbLmOSkBoC/6mmSJfy1wybBaXJyJxBvV
 8cqFCKKI
 =zcgP
-<<<<<<< HEAD
------END PGP PUBLIC KEY BLOCK-----`,
-    };
-  },
-  //old and doesnt work i just left it here bcs maybe i will use it later
-  /*
-  methods: {
-    async validatePgpMessage() {
-      try {
-        const { data: decrypted } = await openpgp.decrypt({
-          message: await openpgp.message.readArmored(this.pgpMessage),
-          publicKeys: (await openpgp.key.readArmored(this.pgpKey)).keys,
-        });
-        this.validationResult = decrypted.data;
-      } catch (error) {
-        console.error(error);
-        this.validationResult = 'Invalid PGP message';
-      }
-    },
-  },
-  */
-};
-
-=======
 -----END PGP PUBLIC KEY BLOCK-----</pre
           >
         </div>
@@ -164,63 +115,62 @@ ujbtyhQm4r6wzZaWglKXNkZabsU4YJFXrbLmOSkBoC/6mmSJfy1wybBaXJyJxBvV
 </template>
 
 <script setup>
-const copied = ref(false);
-const keyBlock = ref(null);
+const copied = ref(false)
+const keyBlock = ref(null)
 
 const copyKey = async () => {
-  if (!keyBlock.value) return;
+  if (!keyBlock.value) return
 
   try {
-    await navigator.clipboard.writeText(keyBlock.value.textContent);
-    copied.value = true;
+    await navigator.clipboard.writeText(keyBlock.value.textContent)
+    copied.value = true
     setTimeout(() => {
-      copied.value = false;
-    }, 2000);
+      copied.value = false
+    }, 2000)
   } catch (err) {
-    console.error("Failed to copy key:", err);
+    console.error('Failed to copy key:', err)
   }
-};
+}
 
 const downloadKey = () => {
-  const keyContent = keyBlock.value?.textContent || "";
-  const blob = new Blob([keyContent], { type: "text/plain" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "wuemeli-pgp-public-key.asc";
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-};
+  const keyContent = keyBlock.value?.textContent || ''
+  const blob = new Blob([keyContent], { type: 'text/plain' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = 'wuemeli-pgp-public-key.asc'
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+  URL.revokeObjectURL(url)
+}
 
 useHead({
-  title: "PGP Public Key - Wuemeli",
+  title: 'PGP Public Key - Wuemeli',
   meta: [
     {
-      name: "description",
+      name: 'description',
       content:
         "Wuemeli's PGP public key for secure communication and signature verification. Download or copy the key block for encrypted messaging.",
     },
     {
-      name: "keywords",
+      name: 'keywords',
       content:
-        "pgp, public key, encryption, security, wuemeli, gpg, cryptography",
+        'pgp, public key, encryption, security, wuemeli, gpg, cryptography',
     },
     {
-      property: "og:title",
-      content: "PGP Public Key - Wuemeli",
+      property: 'og:title',
+      content: 'PGP Public Key - Wuemeli',
     },
     {
-      property: "og:description",
+      property: 'og:description',
       content:
-        "PGP public key for secure communication with Wuemeli. Encrypt messages or verify signatures.",
+        'PGP public key for secure communication with Wuemeli. Encrypt messages or verify signatures.',
     },
     {
-      property: "og:type",
-      content: "website",
+      property: 'og:type',
+      content: 'website',
     },
   ],
-});
->>>>>>> new-website
+})
 </script>
