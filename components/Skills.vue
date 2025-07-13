@@ -128,6 +128,33 @@
                     from friends. I use stuff such as BurpSuite, Shodan, nmap,
                     sqlmap, wireshark, metasploit and my own cool Python
                     scripts.
+                    <Skill
+                        name="BurpSuite"
+                        icon="/icons/burp.jpg"
+                        color="green"
+                    />,
+                    <Skill
+                        name="Shodan"
+                        icon="/icons/shodan.png"
+                        color="blue"
+                    />,
+                    <Skill name="Nmap" icon="/icons/nmap.svg" color="red" />,
+                    <Skill
+                        name="Sqlmap"
+                        icon="/icons/sqlmap.png"
+                        color="yellow"
+                    />,
+                    <Skill
+                        name="Wireshark"
+                        icon="/icons/wireshark.jpg"
+                        color="purple"
+                    />,
+                    <Skill
+                        name="Metasploit"
+                        icon="/icons/metasploit.jpg"
+                        color="red"
+                    />
+                    and some cool totally selfwritten Python scripts.
                 </p>
             </div>
 
@@ -147,9 +174,14 @@
                 >
                     Wuemeli's Utils <span class="text-lg align-middle">📦</span>
                 </a>
-                to make the Minecraft experience even better.
+                to make the Minecraft experience even better. I also host
+                various
+                <Skill name="Monero" icon="/icons/monero.png" color="green" />
+                nodes and run a
+                <Skill name="Tor" icon="/icons/tor.png" color="orange" /> relay.
                 <br /><br />
-                I use the <Skill name="Zed" emoji="✏️" color="blue" /> to write
+                I use the
+                <Skill name="Zed" icon="/icons/zed.png" color="blue" /> to write
                 code.
             </p>
         </div>
