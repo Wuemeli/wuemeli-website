@@ -7,46 +7,46 @@
         >
             <ul class="flex items-center gap-6 text-sm font-medium">
                 <li>
-                    <a
+                    <NuxtLink
                         href="/"
                         class="text-light-gray hover:text-blue-400 transition-colors"
-                        >Home</a
+                        >Home</NuxtLink
                     >
                 </li>
                 <li>
-                    <a
-                        href="#skills"
+                    <NuxtLink
+                        href="/#skills"
                         class="text-light-gray hover:text-green-400 transition-colors"
-                        >Skills</a
+                        >Skills</NuxtLink
                     >
                 </li>
                 <li>
-                    <a
-                        href="#projects"
+                    <NuxtLink
+                        href="/#projects"
                         class="text-light-gray hover:text-blue-400 transition-colors"
-                        >Projects</a
+                        >Projects</NuxtLink
                     >
                 </li>
                 <li>
-                    <a
-                        href="#giving-back"
+                    <NuxtLink
+                        href="/#giving-back"
                         class="text-light-gray hover:text-pink-400 transition-colors"
-                        >Giving Back</a
+                        >Giving Back</NuxtLink
                     >
                 </li>
                 <li>
-                    <a
-                        href="#contact"
+                    <NuxtLink
+                        href="/#contact"
                         class="text-light-gray hover:text-yellow-400 transition-colors"
-                        >Contact</a
+                        >Contact</NuxtLink
                     >
                 </li>
                 <li>
-                    <a
+                    <NuxtLink
                         href="/pgp"
                         class="text-light-gray hover:text-purple-400 transition-colors flex items-center gap-1"
                     >
-                        PGP</a
+                        PGP</NuxtLink
                     >
                 </li>
             </ul>

@@ -125,9 +125,7 @@
                 </h3>
                 <p class="text-gray-300 text-lg leading-relaxed">
                     I also enjoy breaching and tinkering with my own systems and
-                    from friends. I use stuff such as BurpSuite, Shodan, nmap,
-                    sqlmap, wireshark, metasploit and my own cool Python
-                    scripts.
+                    from my cool friends. I use these tools:
                     <Skill
                         name="BurpSuite"
                         icon="/icons/burp.jpg"
@@ -138,7 +136,7 @@
                         icon="/icons/shodan.png"
                         color="blue"
                     />,
-                    <Skill name="Nmap" icon="/icons/nmap.svg" color="red" />,
+                    <Skill name="Nmap" icon="/icons/nmap.png" color="red" />,
                     <Skill
                         name="Sqlmap"
                         icon="/icons/sqlmap.png"

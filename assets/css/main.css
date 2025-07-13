@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
+    overflow-x: hidden;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     background: #171819;
     color: #cccccc;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .brush-name {

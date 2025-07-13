@@ -1,5 +1,11 @@
 <template>
-    <div class="min-h-screen bg-dark-gray text-light-gray">
+    <div class="min-h-screen bg-dark-gray text-light-gray overflow-x-hidden">
+        <canvas
+            ref="confettiCanvas"
+            class="fixed inset-0 pointer-events-none z-50 w-full h-full"
+            :width="canvasWidth"
+            :height="canvasHeight"
+        ></canvas>
         <div class="container mx-auto px-6 py-12 pt-24 max-w-4xl">
             <header class="mb-16 animate-fade-in">
                 <h1 class="text-4xl font-bold mb-6 text-light-gray typewriter">
@@ -27,13 +33,7 @@
             <Contact />
 
             <section class="mb-16 animate-slide-up text-center">
-                <div class="relative">
-                    <canvas
-                        ref="confettiCanvas"
-                        class="absolute inset-0 pointer-events-none z-10"
-                        :width="canvasWidth"
-                        :height="canvasHeight"
-                    ></canvas>
+                <div class="relative overflow-hidden">
                     <div class="relative z-20">
                         <p
                             class="text-gray-300 text-lg leading-relaxed mb-6 max-w-2xl mx-auto"
@@ -60,7 +60,7 @@
 <script setup>
 const confettiCanvas = ref(null);
 const canvasWidth = ref(800);
-const canvasHeight = ref(600);
+const canvasHeight = ref(400);
 
 const triggerConfetti = () => {
     if (!confettiCanvas.value) return;
