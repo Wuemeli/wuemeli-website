@@ -91,7 +91,7 @@
           <Skill name="Shodan" icon="/icons/shodan.png" color="blue" />,
           <Skill name="Nmap" icon="/icons/nmap.svg" color="red" />,
           <Skill name="Sqlmap" icon="/icons/sqlmap.png" color="yellow" />,
-          <Skill name="Wireshark" icon="/icons/wireshark.jpg" color="purple" />,
+          <Skill name="Wireshark" icon="/icons/wireshark.svg" color="purple" />,
           <Skill name="Metasploit" icon="/icons/metasploit.svg" color="red" />
           and some cool totally selfwritten Python scripts.
         </p>
@@ -114,7 +114,7 @@
           Wuemeli's Utils
         </a>
         to make the Minecraft experience even better. I also host various
-        <Skill name="Monero" icon="/icons/monero.png" color="green" />
+        <Skill name="Monero" icon="/icons/monero.svg" color="green" />
         nodes and run a
         <Skill name="Tor" icon="/icons/tor.svg" color="orange" /> relay.
         <br /><br />

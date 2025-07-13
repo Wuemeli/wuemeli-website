@@ -35,7 +35,7 @@
         <h3
           class="text-lg font-semibold mb-3 text-purple-400 flex items-center gap-2"
         >
-          <NuxtImg src="/icons/discord.jpg" alt="Discord" class="w-6 h-6" />
+          <NuxtImg src="/icons/discord.svg" alt="Discord" class="w-6 h-6" />
           Discord
         </h3>
         <p class="text-gray-300 leading-relaxed mb-2">
