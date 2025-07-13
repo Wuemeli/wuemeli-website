@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: "Wuemeli's Portfolio",
       htmlAttrs: {
         lang: 'en',
       },
@@ -44,6 +43,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   vite: { plugins: [tailwindcss()] },
   modules: ['@nuxt/image', '@nuxtjs/seo', '@nuxtjs/plausible'],
+
+  site: {
+    name: "Wuemeli's Portfolio",
+  },
 
   plausible: {
     domain: 'wuemeli.com',
