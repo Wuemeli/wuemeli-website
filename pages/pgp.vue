@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="max-w-4xl px-10 mx-auto space-y-8 text-center">
     <div class="p-4 border border-gray-200 rounded-md">
       <p class="font-semibold">My PGP Key 🔑</p>
@@ -21,6 +22,65 @@ export default {
       pgpMessage: '',
       validationResult: null,
       pgpKey: `-----BEGIN PGP PUBLIC KEY BLOCK-----
+=======
+  <div class="min-h-screen bg-dark-gray text-light-gray font-mono">
+    <div class="container mx-auto px-6 py-12 pt-24 max-w-4xl">
+      <header class="mb-16 animate-fade-in text-center">
+        <div class="text-6xl mb-6">🔑</div>
+        <h1 class="text-4xl font-bold mb-6 text-light-gray">
+          My PGP Public Key
+        </h1>
+        <p class="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
+          For secure communication and verification of my identity. Use this key
+          to encrypt messages to me or verify signatures on my work.
+        </p>
+      </header>
+
+      <section class="mb-12 animate-slide-up">
+        <h2
+          class="text-2xl font-bold mb-6 text-light-gray flex items-center justify-center gap-3"
+        >
+          <span>💾</span>
+          Download Key
+        </h2>
+
+        <div class="text-center">
+          <button
+            @click="downloadKey"
+            class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 mb-4"
+          >
+            🔗 Download PGP Key
+          </button>
+          <p class="text-gray-400 text-sm">
+            Click to download the key file, or copy the key block below
+          </p>
+        </div>
+      </section>
+
+      <section class="mb-16 animate-slide-up">
+        <h2
+          class="text-2xl font-bold mb-6 text-light-gray flex items-center justify-center gap-3"
+        >
+          <span>🔐</span>
+          Public Key Block
+        </h2>
+
+        <div
+          class="bg-baltic-sea/50 rounded-lg p-6 border border-dune/30 relative"
+        >
+          <button
+            @click="copyKey"
+            class="absolute top-4 right-4 bg-dune/20 hover:bg-dune/40 text-light-gray px-3 py-1 rounded text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-dune/50"
+          >
+            {{ copied ? "✅ Copied!" : "📋 Copy" }}
+          </button>
+
+          <pre
+            ref="keyBlock"
+            class="text-xs text-gray-300 overflow-x-auto whitespace-pre-wrap break-all leading-relaxed"
+          >
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+>>>>>>> new-website
 
 mQINBGbFmHsBEADg7cKJzVqcoK20e8FfO2wY9B5SEqulD5G6d9EZ/aF3DIYPnWNp
 H6t2VHyVyji/xZuLno3jofY/pKleZ2h8EtyzetWl0B9rYgqWEaADgJRIQ/5LmLMh
@@ -71,6 +131,7 @@ JF/xRSfgNdkmOYMrpYau6o+90Zdajw5icSJ3M/ZwtWFCD47o5Kmc61G7B8SBzNLa
 ujbtyhQm4r6wzZaWglKXNkZabsU4YJFXrbLmOSkBoC/6mmSJfy1wybBaXJyJxBvV
 8cqFCKKI
 =zcgP
+<<<<<<< HEAD
 -----END PGP PUBLIC KEY BLOCK-----`,
     };
   },
@@ -93,4 +154,73 @@ ujbtyhQm4r6wzZaWglKXNkZabsU4YJFXrbLmOSkBoC/6mmSJfy1wybBaXJyJxBvV
   */
 };
 
+=======
+-----END PGP PUBLIC KEY BLOCK-----</pre
+          >
+        </div>
+      </section>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const copied = ref(false);
+const keyBlock = ref(null);
+
+const copyKey = async () => {
+  if (!keyBlock.value) return;
+
+  try {
+    await navigator.clipboard.writeText(keyBlock.value.textContent);
+    copied.value = true;
+    setTimeout(() => {
+      copied.value = false;
+    }, 2000);
+  } catch (err) {
+    console.error("Failed to copy key:", err);
+  }
+};
+
+const downloadKey = () => {
+  const keyContent = keyBlock.value?.textContent || "";
+  const blob = new Blob([keyContent], { type: "text/plain" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "wuemeli-pgp-public-key.asc";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+};
+
+useHead({
+  title: "PGP Public Key - Wuemeli",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Wuemeli's PGP public key for secure communication and signature verification. Download or copy the key block for encrypted messaging.",
+    },
+    {
+      name: "keywords",
+      content:
+        "pgp, public key, encryption, security, wuemeli, gpg, cryptography",
+    },
+    {
+      property: "og:title",
+      content: "PGP Public Key - Wuemeli",
+    },
+    {
+      property: "og:description",
+      content:
+        "PGP public key for secure communication with Wuemeli. Encrypt messages or verify signatures.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+  ],
+});
+>>>>>>> new-website
 </script>

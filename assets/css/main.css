@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,3 +46,51 @@ p {
   width: 100px;
   height: auto;
 }
+=======
+@import url(https://fonts.bunny.net/css?family=comic-neue:400,700);
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Comic Neue", cursive;
+    background: #171819;
+    color: #cccccc;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.brush-name {
+    background: linear-gradient(45deg, #ff6b9d, #e83e8c, #ff1744);
+    background-size: 300% 300%;
+    animation: gradientShift 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(255, 107, 157, 0.3);
+}
+
+.brush-name::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    right: -10px;
+    bottom: -5px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath d='M5,10 Q25,5 50,10 T95,10' stroke='%23ff6b9d' stroke-width='2' fill='none' opacity='0.3'/%3E%3C/svg%3E")
+        repeat-x;
+    background-size: 100px 20px;
+    pointer-events: none;
+    z-index: -1;
+}
+>>>>>>> new-website
