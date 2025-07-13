@@ -19,7 +19,6 @@
                     <h3
                         class="text-xl font-semibold mb-1 text-blue-400 flex items-center gap-2"
                     >
-                        <span>🐧</span>
                         Linus Torvalds
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-sm">
@@ -40,7 +39,6 @@
                     <h3
                         class="text-xl font-semibold mb-1 text-green-400 flex items-center gap-2"
                     >
-                        <span>🕵️</span>
                         Edward Snowden
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-sm">
@@ -61,7 +59,6 @@
                     <h3
                         class="text-xl font-semibold mb-1 text-purple-400 flex items-center gap-2"
                     >
-                        <span>🕊️</span>
                         Aaron Swartz
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-sm">
@@ -82,7 +79,6 @@
                     <h3
                         class="text-xl font-semibold mb-1 text-cyan-400 flex items-center gap-2"
                     >
-                        <span>🧠</span>
                         Alan Turing
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-sm">

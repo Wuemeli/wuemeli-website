@@ -37,10 +37,11 @@
                         <p
                             class="text-gray-300 text-lg leading-relaxed mb-6 max-w-2xl mx-auto"
                         >
-                            Well, that's me! Thanks for taking the time to learn
-                            about what I do and what I care about. If any of
-                            this resonates with you, or if you have questions
-                            about my work, don't hesitate to reach out.
+                            Well, that's me! If you have questions about my
+                            work, don't hesitate to reach out. And please click
+                            the Button so my Plausible Instance can track that
+                            you read this far. I would be very happy about that!
+                            😄
                         </p>
                         <button
                             @click="triggerConfetti"

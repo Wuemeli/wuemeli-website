@@ -85,30 +85,6 @@
 
             <div class="mb-6">
                 <h3
-                    class="text-lg font-semibold mb-3 text-blue-400 flex items-center gap-2"
-                >
-                    <NuxtImg
-                        src="/icons/signal.svg"
-                        alt="Signal"
-                        class="w-6 h-6"
-                    />
-                    Signal
-                </h3>
-                <p class="text-gray-300 leading-relaxed mb-2">
-                    End-to-end encrypted, privacy-focused, and great for quick
-                    or sensitive conversations.
-                </p>
-                <a
-                    href="https://signal.me/#eu/-dw6WNDYYa_3qH0O_KejbEWD71PuCstrZewUza9ym1ibbwbztyNAbq2pFiSyIKX1"
-                    target="_blank"
-                    class="inline-block bg-blue-900/30 text-blue-300 px-4 py-2 rounded hover:bg-blue-900/50 transition-colors"
-                >
-                    Message me on Signal
-                </a>
-            </div>
-
-            <div class="mb-6">
-                <h3
                     class="text-lg font-semibold mb-3 text-green-300 flex items-center gap-2"
                 >
                     <span>✉️</span>
