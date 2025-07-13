@@ -3,6 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
+
   app: {
     head: {
       charset: 'utf-8',
@@ -42,5 +43,16 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   vite: { plugins: [tailwindcss()] },
-  modules: ['@nuxt/image', '@nuxtjs/seo'],
+  modules: ['@nuxt/image', '@nuxtjs/seo', '@nuxtjs/plausible'],
+
+  plausible: {
+    domain: 'wuemeli.com',
+    apiHost: 'https://googleisbad.wuemeli.com',
+    autoOutboundTracking: true,
+    autoPageviews: true,
+  },
+
+  sitemap: {
+    enabled: true,
+  },
 })
