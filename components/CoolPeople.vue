@@ -9,7 +9,7 @@
         class="bg-baltic-sea/50 rounded-lg p-6 border border-blue-500/30 flex gap-4 items-center"
       >
         <NuxtImg
-          src="/icons/linux.avif"
+          src="/icons/linus.avif"
           alt="Linus Torvalds"
           class="w-16 h-16 rounded-full object-cover border-2 border-blue-400"
         />
