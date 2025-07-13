@@ -25,32 +25,14 @@
         </h3>
         <p class="text-gray-300 text-lg leading-relaxed">
           I enjoy building robust backend systems with
-          <Skill
-            name="Node.js"
-            icon="/icons/nodejs-original.svg"
-            color="green"
-          />, <Skill name="Hono" emoji="🔥" color="orange" />,
-          <Skill
-            name="Typescript"
-            icon="/icons/typescript-original.svg"
-            color="blue"
-          />,
-          <Skill
-            name="Postgres"
-            icon="/icons/postgresql-original.svg"
-            color="blue"
-          />, <Skill name="Drizzle" emoji="💧" color="purple" />,
-          <Skill name="Bun" icon="/icons/bun-original.svg" color="orange" />,
-          <Skill
-            name="Python"
-            icon="/icons/python-original.svg"
-            color="yellow"
-          />, and
-          <Skill
-            name="MongoDB"
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-            color="green"
-          />.
+          <Skill name="Node.js" icon="/icons/nodejs.svg" color="green" />,
+          <Skill name="Hono" emoji="🔥" color="orange" />,
+          <Skill name="Typescript" icon="/icons/typescript.svg" color="blue" />,
+          <Skill name="Postgres" icon="/icons/postgresql.svg" color="blue" />,
+          <Skill name="Drizzle" emoji="💧" color="purple" />,
+          <Skill name="Bun" icon="/icons/bun.svg" color="orange" />,
+          <Skill name="Python" icon="/icons/python.svg" color="yellow" />, and
+          <Skill name="MongoDB" icon="/icons/mongodb.svg" color="green" />.
         </p>
       </div>
 
@@ -63,26 +45,18 @@
         </h3>
         <p class="text-gray-300 text-lg leading-relaxed">
           I work with modern DevOps tools and practices including
-          <Skill
-            name="Docker"
-            icon="/icons/docker-original.svg"
-            color="blue"
-          />,
+          <Skill name="Docker" icon="/icons/docker.svg" color="blue" />,
           <Skill
             name="Kubernetes"
-            icon="/icons/kubernetes-plain.svg"
+            icon="/icons/kubernetes.svg"
             color="purple"
           />,
           <Skill
             name="Cloudflare Workers"
             icon="/icons/workers.svg"
             color="yellow"
-          />,
-          <Skill
-            name="Git"
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-            color="gray"
-          />, and <Skill name="NixOS" icon="/icons/nix.webp" color="blue" />.
+          />, <Skill name="Git" icon="/icons/git.svg" color="gray" />, and
+          <Skill name="NixOS" icon="/icons/nixos.svg" color="blue" />.
         </p>
       </div>
 
@@ -95,15 +69,11 @@
         </h3>
         <p class="text-gray-300 text-lg leading-relaxed">
           While I prefer backend work, I can handle frontend development with
-          <Skill name="HTML" icon="/icons/html5-original.svg" color="red" />,
-          <Skill name="CSS" icon="/icons/css3-original.svg" color="blue" />,
-          <Skill
-            name="JavaScript"
-            icon="/icons/javascript-original.svg"
-            color="yellow"
-          />
+          <Skill name="HTML" icon="/icons/html.svg" color="red" />,
+          <Skill name="CSS" icon="/icons/css.svg" color="blue" />,
+          <Skill name="JavaScript" icon="/icons/js.svg" color="yellow" />
           and
-          <Skill name="Nuxt" icon="/icons/nuxtjs-original.svg" color="green" />.
+          <Skill name="Nuxt" icon="/icons/nuxt.svg" color="green" />.
         </p>
       </div>
 
@@ -119,10 +89,10 @@
           cool friends. I use these tools:
           <Skill name="BurpSuite" icon="/icons/burp.jpg" color="green" />,
           <Skill name="Shodan" icon="/icons/shodan.png" color="blue" />,
-          <Skill name="Nmap" icon="/icons/nmap.png" color="red" />,
+          <Skill name="Nmap" icon="/icons/nmap.svg" color="red" />,
           <Skill name="Sqlmap" icon="/icons/sqlmap.png" color="yellow" />,
           <Skill name="Wireshark" icon="/icons/wireshark.jpg" color="purple" />,
-          <Skill name="Metasploit" icon="/icons/metasploit.jpg" color="red" />
+          <Skill name="Metasploit" icon="/icons/metasploit.svg" color="red" />
           and some cool totally selfwritten Python scripts.
         </p>
       </div>
@@ -141,12 +111,12 @@
           target="_blank"
           class="inline-flex items-center gap-1 underline text-purple-200 hover:text-purple-100 font-semibold"
         >
-          Wuemeli's Utils <span class="text-lg align-middle">📦</span>
+          Wuemeli's Utils
         </a>
         to make the Minecraft experience even better. I also host various
         <Skill name="Monero" icon="/icons/monero.png" color="green" />
         nodes and run a
-        <Skill name="Tor" icon="/icons/tor.png" color="orange" /> relay.
+        <Skill name="Tor" icon="/icons/tor.svg" color="orange" /> relay.
         <br /><br />
         I use the
         <Skill name="Zed" icon="/icons/zed.png" color="blue" /> code editor to
