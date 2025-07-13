@@ -12,7 +12,7 @@
     <div class="max-w-4xl mx-auto">
       <p class="text-gray-300 text-lg leading-relaxed mb-8">
         First and foremost, I hate designing frontends. I'm more of the logic
-        guy that would write a web scraper to find the best Mansions. I love
+        guy that would write a web scraper to find the best mansions. I love
         collaboration, open source, and sharing knowledge with others.
       </p>
 
@@ -81,15 +81,15 @@
           Penetration Testing & Security
         </h3>
         <p class="text-gray-300 text-lg leading-relaxed">
-          I also enjoy breaching and tinkering with my own systems and from my
-          cool friends. I use these tools:
+          I also enjoy breaching and tinkering with my own systems and with
+          those of my cool friends. I use these tools:
           <Skill name="BurpSuite" icon="/icons/burp.jpg" color="green" />,
           <Skill name="Shodan" icon="/icons/shodan.png" color="blue" />,
           <Skill name="Nmap" icon="/icons/nmap.svg" color="red" />,
           <Skill name="Sqlmap" icon="/icons/sqlmap.png" color="yellow" />,
           <Skill name="Wireshark" icon="/icons/wireshark.svg" color="purple" />,
           <Skill name="Metasploit" icon="/icons/metasploit.svg" color="red" />
-          and some cool totally selfwritten Python scripts.
+          and some cool totally self-written Python script.
         </p>
       </div>
 
