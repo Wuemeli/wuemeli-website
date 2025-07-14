@@ -64,7 +64,7 @@
           coded.
         </p>
         <a
-          href="https://zen.ith.rip"
+          href="https://zenith.ms"
           target="_blank"
           class="text-green-300 hover:text-green-200 text-sm flex items-center gap-1"
         >
