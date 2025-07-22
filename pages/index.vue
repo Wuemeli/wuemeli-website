@@ -10,7 +10,7 @@
       <header class="mb-16 animate-fade-in">
         <h1 class="text-4xl font-bold mb-6 text-light-gray">
           Hey there, I am
-          <span class="brush-name">Wuemeli</span> (he/him),
+          <span class="brush-name">Wuemeli</span>,
         </h1>
 
         <div class="text-lg leading-relaxed">
