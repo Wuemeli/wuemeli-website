@@ -25,6 +25,7 @@
         <p class="text-gray-300 text-lg leading-relaxed">
           I enjoy building robust backend systems with
           <Skill name="Node.js" icon="/icons/nodejs.svg" color="green" />,
+          <Skill name="Deno" icon="/icons/deno.svg" color="black" />,
           <Skill name="Hono" emoji="🔥" color="orange" />,
           <Skill name="Typescript" icon="/icons/typescript.svg" color="blue" />,
           <Skill name="Postgres" icon="/icons/postgresql.svg" color="blue" />,
@@ -53,7 +54,9 @@
             name="Cloudflare Workers"
             icon="/icons/workers.svg"
             color="yellow"
-          />, <Skill name="Git" icon="/icons/git.svg" color="gray" />, and
+          />, <Skill name="bunny.net" icon="/icons/bunny.svg" color="orange" />,
+          <Skill name="Hetzner" icon="/icons/hetzner.jpeg" color="red" />,
+          <Skill name="Git" icon="/icons/git.svg" color="gray" />, and
           <Skill name="NixOS" icon="/icons/nixos.svg" color="blue" />.
         </p>
       </div>
@@ -68,6 +71,7 @@
           While I prefer backend work, I can handle frontend development with
           <Skill name="HTML" icon="/icons/html.svg" color="red" />,
           <Skill name="CSS" icon="/icons/css.svg" color="blue" />,
+          <Skill name="Tailwind" icon="/icons/tailwind.svg" color="cyan" />,
           <Skill name="JavaScript" icon="/icons/js.svg" color="yellow" />
           and
           <Skill name="Nuxt" icon="/icons/nuxt.svg" color="green" />.
