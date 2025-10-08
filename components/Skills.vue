@@ -1,7 +1,6 @@
 <template>
   <section id="skills" class="mb-16 animate-slide-up">
     <h2 class="text-3xl font-bold mb-8 text-light-gray flex items-center gap-3">
-      <span>⚔️</span>
       The Arsenal I Wield
     </h2>
     <div class="text-center mb-8">
@@ -121,6 +120,18 @@
         I use the
         <Skill name="Zed" icon="/icons/zed.svg" color="blue" /> code editor to
         write code.
+      </p>
+      <p class="text-gray-300 text-lg leading-relaxed">
+        I also own and operate my own
+        <a
+          href="https://bgp.tools/as/211876"
+          target="_blank"
+          class="inline-flex items-center gap-1 underline text-purple-200 hover:text-purple-100 font-semibold"
+        >
+          ASN
+        </a>
+        with a global anycasted cdn and a private network. Feel free to hit me
+        up when you want to peer with me.
       </p>
     </div>
   </section>

@@ -1,7 +1,6 @@
 <template>
   <section id="why" class="mb-16 animate-slide-up">
     <h2 class="text-3xl font-bold mb-8 text-light-gray flex items-center gap-3">
-      <span>🤔</span>
       Why I Care About Privacy & Independence
     </h2>
     <div class="grid gap-8 md:grid-cols-2">

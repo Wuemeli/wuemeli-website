@@ -29,6 +29,13 @@
         </li>
         <li>
           <NuxtLink
+            href="/blog"
+            class="text-light-gray hover:text-orange-400 transition-colors"
+            >Blog</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
             href="/#giving-back"
             class="text-light-gray hover:text-pink-400 transition-colors"
             >Giving Back</NuxtLink

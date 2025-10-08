@@ -62,6 +62,7 @@ const canvasHeight = ref(400)
 
 const triggerConfetti = () => {
   if (!confettiCanvas.value) return
+  useTrackEvent('finished_reading')
 
   const canvas = confettiCanvas.value
   const ctx = canvas.getContext('2d')
