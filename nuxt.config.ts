@@ -10,6 +10,8 @@ export default defineNuxtConfig({
 
   site: {
     name: "Wuemeli's Portfolio",
+    url: 'https://wuemeli.com',
+    description: "A portfolio website showcasing Wuemeli's work and projects.",
   },
 
   plausible: {
@@ -25,5 +27,10 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'static',
+    prerender: {
+      failOnError: false,
+      crawlLinks: true,
+      routes: ['/'],
+    },
   },
 })
