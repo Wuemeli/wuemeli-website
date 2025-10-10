@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^3.7.1",
-    "@nuxt/image": "1.10.0",
+    "@nuxt/image": "1.11.0",
     "@nuxtjs/plausible": "^2.0.0",
     "@nuxtjs/seo": "^3.2.2",
     "@tailwindcss/vite": "^4.1.14",
