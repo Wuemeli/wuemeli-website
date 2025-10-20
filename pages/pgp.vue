@@ -2,7 +2,6 @@
   <div class="min-h-screen bg-dark-gray text-light-gray font-mono">
     <div class="container mx-auto px-6 py-12 pt-24 max-w-4xl">
       <header class="mb-16 animate-fade-in text-center">
-        <div class="text-6xl mb-6">🔑</div>
         <h1 class="text-4xl font-bold mb-6 text-light-gray">
           My PGP Public Key
         </h1>
@@ -16,7 +15,6 @@
         <h2
           class="text-2xl font-bold mb-6 text-light-gray flex items-center justify-center gap-3"
         >
-          <span>💾</span>
           Download Key
         </h2>
 
@@ -25,11 +23,8 @@
             @click="downloadKey"
             class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
           >
-            🔗 Download PGP Key
+            Download PGP Key
           </button>
-          <p class="text-gray-400 text-sm">
-            Click to download the key file, or copy the key block below
-          </p>
         </div>
       </section>
 
@@ -37,7 +32,6 @@
         <h2
           class="text-2xl font-bold mb-6 text-light-gray flex items-center justify-center gap-3"
         >
-          <span>🔐</span>
           Public Key Block
         </h2>
 

@@ -5,7 +5,6 @@
     </h2>
 
     <div class="text-center mb-10">
-      <div class="text-5xl mb-4">🤝</div>
       <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
         I support organizations making a real difference in digital rights,
         privacy, and open technology. Here are some of my favorites:
@@ -17,11 +16,6 @@
         class="bg-gradient-to-br from-blue-900/20 to-blue-800/10 rounded-xl p-6 border border-blue-500/30 hover:border-blue-500/50 transition-all duration-300"
       >
         <div class="flex items-center gap-3 mb-4">
-          <div
-            class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center text-2xl"
-          >
-            🔐
-          </div>
           <h3 class="text-xl font-semibold text-blue-400">
             Privacy & Security
           </h3>
@@ -79,11 +73,6 @@
         class="bg-gradient-to-br from-purple-900/20 to-purple-800/10 rounded-xl p-6 border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300"
       >
         <div class="flex items-center gap-3 mb-4">
-          <div
-            class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center text-2xl"
-          >
-            ⚖️
-          </div>
           <h3 class="text-xl font-semibold text-purple-400">
             Digital Rights & Advocacy
           </h3>
