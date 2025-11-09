@@ -1,4 +1,3 @@
-@import url(https://fonts.bunny.net/css?family=comic-neue:400,700);
 @import 'tailwindcss';
 
 @font-face {
@@ -20,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'LiveOver', 'Comic Neue', cursive;
+  font-family: 'LiveOver', cursive;
   background: #171819;
   color: #cccccc;
   line-height: 1.6;

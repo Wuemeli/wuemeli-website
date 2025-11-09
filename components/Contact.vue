@@ -70,24 +70,6 @@
 
       <div class="mb-6">
         <h3
-          class="text-lg font-semibold mb-3 text-blue-400 flex items-center gap-2"
-        >
-          <NuxtImg src="/icons/mastodon.svg" alt="Mastodon" class="w-6 h-6" />
-          Mastodon
-        </h3>
-        <p class="text-gray-300 leading-relaxed mb-2">Stalk me on Mastodon</p>
-        <a
-          rel="me"
-          href="https://mastodon.social/@wuemeli"
-          target="_blank"
-          class="inline-block bg-blue-900/30 text-blue-300 px-4 py-2 rounded hover:bg-blue-900/50 transition-colors"
-        >
-          Follow on Mastodon
-        </a>
-      </div>
-
-      <div class="mb-6">
-        <h3
           class="text-lg font-semibold mb-3 text-green-300 flex items-center gap-2"
         >
           <span>✉️</span>
