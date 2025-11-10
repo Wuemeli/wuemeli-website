@@ -24,7 +24,7 @@ jobs:
         run: bunx nuxt generate
 
       - name: Deploy to BunnyCDN
-        uses: ayeressian/bunnycdn-storage-deploy@v2.4.0
+        uses: ayeressian/bunnycdn-storage-deploy@v2.4.1
         with:
           source: '.output/public'
           destination: '.'
