@@ -5,10 +5,6 @@
         <h1 class="text-4xl font-bold mb-6 text-light-gray">
           My PGP Public Key
         </h1>
-        <p class="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
-          For secure communication and verification of my identity. Use this key
-          to encrypt messages to me or verify signatures on my work.
-        </p>
       </header>
 
       <section class="mb-12 animate-slide-up">
@@ -42,7 +38,7 @@
             @click="copyKey"
             class="absolute top-4 right-4 bg-dune/20 hover:bg-dune/40 text-light-gray px-3 py-1 rounded text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-dune/50"
           >
-            {{ copied ? '✅ Copied!' : '📋 Copy' }}
+            {{ copied ? 'Copied!' : 'Copy' }}
           </button>
 
           <pre
@@ -141,30 +137,5 @@ const downloadKey = () => {
 
 useHead({
   title: 'PGP Public Key - Wuemeli',
-  meta: [
-    {
-      name: 'description',
-      content:
-        "Wuemeli's PGP public key for secure communication and signature verification. Download or copy the key block for encrypted messaging.",
-    },
-    {
-      name: 'keywords',
-      content:
-        'pgp, public key, encryption, security, wuemeli, gpg, cryptography',
-    },
-    {
-      property: 'og:title',
-      content: 'PGP Public Key - Wuemeli',
-    },
-    {
-      property: 'og:description',
-      content:
-        'PGP public key for secure communication with Wuemeli. Encrypt messages or verify signatures.',
-    },
-    {
-      property: 'og:type',
-      content: 'website',
-    },
-  ],
 })
 </script>

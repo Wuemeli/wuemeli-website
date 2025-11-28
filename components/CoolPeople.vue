@@ -7,7 +7,7 @@
       <div
         class="bg-baltic-sea/50 rounded-lg p-6 border border-blue-500/30 flex gap-4 items-center"
       >
-        <NuxtImg
+        <img
           src="/icons/linus.avif"
           alt="Linus Torvalds"
           class="w-16 h-16 rounded-full object-cover border-2 border-blue-400"
@@ -27,7 +27,7 @@
       <div
         class="bg-baltic-sea/50 rounded-lg p-6 border border-green-500/30 flex gap-4 items-center"
       >
-        <NuxtImg
+        <img
           src="/icons/edward.avif"
           alt="Edward Snowden"
           class="w-16 h-16 rounded-full object-cover border-2 border-green-400"
@@ -47,7 +47,7 @@
       <div
         class="bg-baltic-sea/50 rounded-lg p-6 border border-purple-500/30 flex gap-4 items-center"
       >
-        <NuxtImg
+        <img
           src="/icons/aaron.avif"
           alt="Aaron Swartz"
           class="w-16 h-16 rounded-full object-cover border-2 border-purple-400"
@@ -67,7 +67,7 @@
       <div
         class="bg-baltic-sea/50 rounded-lg p-6 border border-cyan-500/30 flex gap-4 items-center"
       >
-        <NuxtImg
+        <img
           src="/icons/alan.avif"
           alt="Alan Turing"
           class="w-16 h-16 rounded-full object-cover border-2 border-cyan-400"

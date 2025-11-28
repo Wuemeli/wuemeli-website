@@ -3,7 +3,7 @@
     class="inline-flex items-center gap-1 font-semibold"
     :class="colorClass"
   >
-    <NuxtImg
+    <img
       v-if="icon && !emoji"
       :src="icon"
       :alt="name"

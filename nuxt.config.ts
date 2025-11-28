@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
   vite: { plugins: [tailwindcss()] },
-  modules: ['@nuxt/image', '@nuxtjs/seo', '@nuxtjs/plausible', '@nuxt/content'],
+  modules: ['@nuxtjs/seo', '@nuxtjs/plausible', '@nuxt/content'],
 
   site: {
     name: "Wuemeli's Portfolio",
