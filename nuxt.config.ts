@@ -8,10 +8,12 @@ export default defineNuxtConfig({
   vite: { plugins: [tailwindcss()] },
   modules: ['@nuxtjs/plausible', '@nuxt/content'],
 
-  site: {
-    name: "Wuemeli's Portfolio",
-    url: 'https://wuemeli.com',
-    description: "A portfolio website showcasing Wuemeli's work and projects.",
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: "Wuemeli's Portfolio",
+    },
   },
 
   plausible: {
