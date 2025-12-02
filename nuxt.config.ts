@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
   vite: { plugins: [tailwindcss()] },
-  modules: ['@nuxtjs/seo', '@nuxtjs/plausible', '@nuxt/content'],
+  modules: ['@nuxtjs/plausible', '@nuxt/content'],
 
   site: {
     name: "Wuemeli's Portfolio",
@@ -19,10 +19,6 @@ export default defineNuxtConfig({
     apiHost: 'https://googleisbad.wuemeli.com',
     autoOutboundTracking: true,
     autoPageviews: true,
-  },
-
-  sitemap: {
-    enabled: true,
   },
 
   nitro: {
